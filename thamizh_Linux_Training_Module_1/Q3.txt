@@ -1,0 +1,9 @@
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_1$ mkdir -p dir1/dir2
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_1$ touch dir1/dir2/file
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_1$ echo "Hello World" > dir1/dir2/file 
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_1$ ln -s dir1/dir2/file dir1/soft_link_to_file
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_1$ ls -l dir1/
+total 4
+drwxrwxr-x 2 thamizh thamizh 4096 Jan 22 19:33 dir2
+lrwxrwxrwx 1 thamizh thamizh   14 Jan 22 19:35 soft_link_to_file -> dir1/dir2/file
+

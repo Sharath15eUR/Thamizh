@@ -1,0 +1,6 @@
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_1$ touch sample.sh
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_1$ chmod +x sample.sh 
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_1$ ls -l
+total 0
+-rwxrwxr-x 1 thamizh thamizh 0 Jan 22 19:28 sample.sh
+

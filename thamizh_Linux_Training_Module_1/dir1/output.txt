@@ -1,0 +1,7 @@
+total 4
+drwxrwxr-x 2 thamizh thamizh 4096 Jan 22 19:33 dir2
+lrwxrwxrwx 1 thamizh thamizh   14 Jan 22 19:35 soft_link_to_file -> dir1/dir2/file
+-rw-rw-r-- 1 thamizh thamizh    0 Jan 22 19:42 sample1
+-rw-rw-r-- 1 thamizh thamizh    0 Jan 22 19:43 sample2
+-rw-rw-r-- 1 thamizh thamizh    0 Jan 22 19:44 sample3
+-rw-rw-r-- 1 thamizh thamizh    0 Jan 22 19:44 output.txt

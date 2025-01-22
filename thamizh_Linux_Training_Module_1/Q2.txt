@@ -1,0 +1,7 @@
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_1$ touch sample.txt
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_1$ ls -l sample.txt 
+-rw-rw-r-- 1 thamizh thamizh 0 Jan 22 19:31 sample.txt
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_1$ chmod g-w sample.txt 
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_1$ ls -l sample.txt 
+-rw-r--r-- 1 thamizh thamizh 0 Jan 22 19:31 sample.txt
+
