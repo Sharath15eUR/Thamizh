@@ -1,0 +1,372 @@
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_2$ ps aux --sort=-%mem
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+thamizh     3903  1.1  3.8 34418756 612204 ?     RLl  Jan26  13:58 /opt/brave.com/brave/brave
+thamizh     5668  0.7  3.3 1220152740 530956 ?   Sl   Jan26   9:09 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh     4342  0.2  2.8 1225207340 450768 ?   Sl   Jan26   3:05 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+mysql       1786  0.3  2.4 2375904 394824 ?      Ssl  Jan26   3:42 /usr/sbin/mysqld
+thamizh    11439  4.1  2.3 1218405780 371680 ?   Sl   Jan26  19:05 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh     4648  0.2  2.2 1220095784 365028 ?   Sl   Jan26   3:32 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh     3102  0.7  2.0 4920068 335316 ?      Ssl  Jan26   9:10 /usr/bin/gnome-shell
+thamizh     5857  0.6  2.0 1218369804 333244 ?   Sl   Jan26   7:21 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh     4391  0.1  1.9 1216637528 319732 ?   Sl   Jan26   2:18 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh     4369  0.0  1.8 1220084384 289244 ?   Sl   Jan26   0:52 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh     4690  0.0  1.6 1220067232 267628 ?   Sl   Jan26   1:08 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh     4573  0.0  1.4 1216633284 239460 ?   Sl   Jan26   0:56 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh     3972  1.4  1.4 34742412 231036 ?     Sl   Jan26  17:33 /opt/brave.com/brave/brave --type=gpu-process --string-annotations --crashpad-handler-pid=3905 --
+thamizh     6442  2.4  1.3 1216684312 224432 ?   Sl   Jan26  29:21 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh     4705  0.0  1.3 1221766732 224048 ?   Sl   Jan26   0:12 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh    11565  0.0  1.3 1216672464 219188 ?   Sl   Jan26   0:06 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh    11233  0.0  1.3 1216672792 218944 ?   Sl   Jan26   0:28 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh    11067  0.1  1.3 1216672728 217248 ?   Sl   Jan26   0:35 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh    10435  0.0  1.2 1218353272 192832 ?   Sl   Jan26   0:13 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh    15773  0.1  1.1 2250628 191436 ?      Sl   Jan26   0:31 /usr/bin/nautilus --gapplication-service
+thamizh     6044  0.0  1.0 1216626644 160964 ?   Sl   Jan26   0:13 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh     4075  0.0  0.9 1216597452 157688 ?   Sl   Jan26   0:21 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh     3973  0.3  0.9 34087952 150620 ?     Sl   Jan26   3:49 /opt/brave.com/brave/brave --type=utility --utility-sub-type=network.mojom.NetworkService --lang=
+thamizh    10958  0.0  0.8 1216621356 144204 ?   Sl   Jan26   0:02 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh     4579  0.0  0.8 1216621352 128968 ?   Sl   Jan26   0:03 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh     3138  0.0  0.6 1227696 111984 ?      Sl   Jan26   0:06 /usr/libexec/mutter-x11-frames
+thamizh     2895  0.6  0.6 876356 105644 tty2    Sl+  Jan26   7:41 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -nolisten tcp -background
+thamizh     7997  0.0  0.6 1218226672 100016 ?   Sl   Jan26   0:01 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh     3689  0.0  0.5 1165412 91572 ?       Ssl  Jan26   0:02 /usr/libexec/xdg-desktop-portal-gnome
+thamizh     4560  0.0  0.5 34049020 90848 ?      Sl   Jan26   0:34 /opt/brave.com/brave/brave --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-G
+thamizh     3676  0.0  0.5 1654568 86464 ?       Sl   Jan26   0:01 /snap/snapd-desktop-integration/253/usr/bin/snapd-desktop-integration
+thamizh     3985  0.0  0.4 34227316 74020 ?      Sl   Jan26   0:06 /opt/brave.com/brave/brave --type=utility --utility-sub-type=storage.mojom.StorageService --lang=
+thamizh    17725  0.0  0.4 1216506280 72592 ?    Sl   03:31   0:00 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid=3905 --ena
+thamizh     3914  0.0  0.4 34166512 69376 ?      S    Jan26   0:00 /opt/brave.com/brave/brave --type=zygote --string-annotations --crashpad-handler-pid=3905 --enabl
+thamizh     3913  0.0  0.4 34166524 69248 ?      S    Jan26   0:00 /opt/brave.com/brave/brave --type=zygote --no-zygote-sandbox --string-annotations --crashpad-hand
+thamizh    17438  0.2  0.4 3504240 66636 ?       Sl   03:22   0:01 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js -E -P /usr/share/gnome-shel
+thamizh     3382  0.0  0.3 887616 61360 ?        Sl   Jan26   0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+thamizh    12178  0.0  0.3 853472 61336 ?        Ssl  Jan26   0:22 /usr/libexec/gnome-terminal-server
+root        6324  0.0  0.2 579848 43284 ?        Ssl  Jan26   0:03 /usr/libexec/fwupd/fwupd
+thamizh     4165  0.0  0.2 538140 43236 ?        Sl   Jan26   0:01 /usr/bin/update-notifier
+thamizh     3179  0.0  0.2 1263504 42624 ?       Ssl  Jan26   0:00 /usr/libexec/evolution-source-registry
+root        1294  0.0  0.2 134244 41020 ?        Ssl  Jan26   0:00 /usr/bin/python3 /usr/sbin/firewalld --nofork --nopid
+thamizh     3562  0.0  0.2 890836 37676 ?        SNsl Jan26   0:03 /usr/libexec/tracker-miner-fs-3
+root        1159  0.0  0.2 2357016 36424 ?       Ssl  Jan26   0:16 /usr/lib/snapd/snapd
+thamizh     3344  0.0  0.2 386332 34816 ?        Sl   Jan26   0:10 /usr/libexec/ibus-extension-gtk3
+thamizh     3246  0.0  0.1 811384 31512 ?        Ssl  Jan26   0:02 /usr/libexec/gsd-media-keys
+thamizh     3250  0.0  0.1 597004 31192 ?        Ssl  Jan26   0:02 /usr/libexec/gsd-power
+thamizh     3278  0.0  0.1 455672 30684 ?        Ssl  Jan26   0:01 /usr/libexec/gsd-xsettings
+thamizh     3749  0.0  0.1 453812 29408 ?        Ssl  Jan26   0:01 /usr/libexec/xdg-desktop-portal-gtk
+thamizh    15693  0.0  0.1 385748 29368 ?        Sl   Jan26   0:00 /usr/bin/gnome-terminal.real --wait
+thamizh     3464  0.0  0.1 825488 28800 ?        Ssl  Jan26   0:00 /usr/libexec/evolution-addressbook-factory
+thamizh     3233  0.0  0.1 453948 28600 ?        Ssl  Jan26   0:00 /usr/libexec/gsd-color
+thamizh     3275  0.0  0.1 453388 27928 ?        Ssl  Jan26   0:00 /usr/libexec/gsd-wacom
+thamizh     2784  0.0  0.1 130212 27904 ?        S<sl Jan26   0:27 /usr/bin/pipewire-pulse
+thamizh     3353  0.0  0.1 305508 27860 ?        Sl   Jan26   0:00 /usr/libexec/ibus-x11 --kill-daemon
+thamizh     3240  0.0  0.1 452776 27376 ?        Ssl  Jan26   0:00 /usr/libexec/gsd-keyboard
+thamizh     3534  0.0  0.1 2932916 26972 ?       Sl   Jan26   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+thamizh     3195  0.0  0.1 2859272 26928 ?       Sl   Jan26   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+thamizh     3202  0.0  0.1 546724 23552 ?        Sl   Jan26   0:00 /usr/libexec/goa-daemon
+thamizh     3294  0.0  0.1 1366080 23296 ?       Ssl  Jan26   0:00 /usr/libexec/evolution-calendar-factory
+root        1639  0.0  0.1 112276 22656 ?        Ssl  Jan26   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+cups-br+    2710  0.0  0.1 268576 19712 ?        Ssl  Jan26   0:00 /usr/sbin/cups-browsed
+root         458  0.0  0.1  67744 19680 ?        S<s  Jan26   0:01 /usr/lib/systemd/systemd-journald
+thamizh    15690  0.0  0.1  31920 19328 ?        S    Jan26   0:00 /usr/bin/python3 /usr/bin/gnome-terminal --wait
+gnome-r+    1134  0.0  0.1 365732 19120 ?        Ssl  Jan26   0:00 /usr/libexec/gnome-remote-desktop-daemon --system
+root        1315  0.0  0.1 336888 18748 ?        Ssl  Jan26   0:03 /usr/sbin/NetworkManager --no-daemon
+thamizh     3923  0.0  0.1 34166536 17940 ?      S    Jan26   0:00 /opt/brave.com/brave/brave --type=zygote --string-annotations --crashpad-handler-pid=3905 --enabl
+thamizh     3076  0.0  0.1 520676 17792 ?        Ssl  Jan26   0:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+thamizh     2778  0.0  0.1 119272 17620 ?        S<sl Jan26   0:23 /usr/bin/pipewire
+thamizh     2783  0.0  0.1 406216 16896 ?        S<sl Jan26   0:02 /usr/bin/wireplumber
+thamizh     3171  0.0  0.1 654848 16640 ?        Sl   Jan26   0:00 /usr/libexec/gnome-shell-calendar-server
+thamizh     2922  0.0  0.1 298204 16512 tty2     Sl+  Jan26   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+systemd+    1028  0.0  0.0  24480 14976 ?        Ss   Jan26   0:04 /usr/lib/systemd/systemd-resolved
+thamizh     3347  0.0  0.0 416200 14848 ?        Sl   Jan26   0:00 /usr/libexec/gsd-printer
+root           1  0.0  0.0  23912 14448 ?        Ss   Jan26   0:04 /sbin/init splash
+thamizh     3684  0.0  0.0 701824 14060 ?        Ssl  Jan26   0:01 /usr/libexec/xdg-desktop-portal
+root        1170  0.0  0.0 406248 13952 ?        Ssl  Jan26   0:29 /usr/bin/touchegg --daemon
+colord      1725  0.0  0.0 320156 13880 ?        Ssl  Jan26   0:00 /usr/libexec/colord
+root        1172  0.0  0.0 470400 13752 ?        Ssl  Jan26   0:00 /usr/libexec/udisks2/udisksd
+thamizh     2756  0.0  0.0  21796 13716 ?        Ss   Jan26   0:04 /usr/lib/systemd/systemd --user
+thamizh     3343  0.0  0.0 266352 13696 ?        Sl   Jan26   0:00 /usr/bin/touchegg
+root        1307  0.0  0.0 322496 13500 ?        Ssl  Jan26   0:06 /usr/libexec/upowerd
+root        2348  0.0  0.0  64624 13312 ?        S    Jan26   0:00 cupsd -f -s /var/snap/cups/common/etc/cups/cups-files.conf -c /var/snap/cups/common/etc/cups/cups
+root        1606  0.0  0.0  39276 12160 ?        Ss   Jan26   0:00 /usr/sbin/cupsd -l
+thamizh     3235  0.0  0.0 431736 12032 ?        Ssl  Jan26   0:00 /usr/libexec/gsd-datetime
+root        1292  0.0  0.0 392216 11996 ?        Ssl  Jan26   0:00 /usr/sbin/ModemManager
+thamizh     3598  0.0  0.0  39128 11776 ?        Ss   Jan26   0:00 /snap/snapd-desktop-integration/253/usr/bin/snapd-desktop-integration
+thamizh     3225  0.0  0.0 388840 11516 ?        Ssl  Jan26   0:37 /usr/bin/ibus-daemon --panel disable --xim
+thamizh     3253  0.0  0.0 323768 11008 ?        Ssl  Jan26   0:00 /usr/libexec/gsd-print-notifications
+thamizh     3297  0.0  0.0 463264 11008 ?        Ssl  Jan26   0:01 /usr/libexec/gvfs-udisks2-volume-monitor
+root        2682  0.0  0.0 390008 10976 ?        Sl   Jan26   0:00 gdm-session-worker [pam/gdm-password]
+thamizh     3262  0.0  0.0 543272 10880 ?        Ssl  Jan26   0:01 /usr/libexec/gsd-sharing
+root        1614  0.0  0.0 1234764 10824 ?       Ssl  Jan26   0:01 /snap/canonical-livepatch/286/canonical-livepatchd
+root        1230  0.0  0.0  18140 10496 ?        Ss   Jan26   0:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+polkitd     1142  0.0  0.0 384824 10400 ?        Ssl  Jan26   0:01 /usr/lib/polkit-1/polkitd --no-debug
+root        1169  0.0  0.0 424904  9984 ?        Ssl  Jan26   0:08 /usr/sbin/thermald --systemd --dbus-enable --adaptive
+thamizh     2786  0.0  0.0 316532  9856 ?        SLsl Jan26   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/u
+root        2349  0.0  0.0 241612  9216 ?        Sl   Jan26   0:00 cups-proxyd /var/snap/cups/common/run/cups.sock /run/cups/cups.sock -l --logdir /var/snap/cups/10
+thamizh     3270  0.0  0.0 393584  9216 ?        Ssl  Jan26   0:00 /usr/libexec/gsd-sound
+thamizh    12637  0.0  0.0 389676  9116 ?        Sl   Jan26   0:00 /usr/libexec/gvfsd-recent --spawner :1.19 /org/gtk/gvfs/exec_spaw/1
+root        1166  0.0  0.0  18192  8840 ?        Ss   Jan26   0:00 /usr/lib/systemd/systemd-logind
+root        1750  0.0  0.0 314824  8832 ?        Ssl  Jan26   0:00 /usr/sbin/gdm3
+thamizh     3228  0.0  0.0 389128  8832 ?        Sl   Jan26   0:00 /usr/libexec/goa-identity-service
+thamizh    12669  0.0  0.0 390548  8448 ?        Sl   Jan26   0:00 /usr/libexec/gvfsd-dnssd --spawner :1.19 /org/gtk/gvfs/exec_spaw/4
+root         554  0.0  0.0  31124  8416 ?        Ss   Jan26   0:02 /usr/lib/systemd/systemd-udevd
+thamizh     3602  0.0  0.0 535712  8320 ?        Sl   Jan26   0:00 /usr/libexec/gvfsd-trash --spawner :1.19 /org/gtk/gvfs/exec_spaw/0
+thamizh    12653  0.0  0.0 462272  8192 ?        Sl   Jan26   0:00 /usr/libexec/gvfsd-network --spawner :1.19 /org/gtk/gvfs/exec_spaw/2
+thamizh     3265  0.0  0.0 385896  7936 ?        Ssl  Jan26   0:00 /usr/libexec/gsd-smartcard
+thamizh     3038  0.0  0.0 383016  7808 ?        Ssl  Jan26   0:00 /usr/libexec/at-spi-bus-launcher
+thamizh     3141  0.0  0.0 236056  7808 ?        Sl   Jan26   0:02 /usr/libexec/at-spi2-registryd --use-gnome-session
+thamizh     3495  0.0  0.0 389376  7808 ?        Ssl  Jan26   0:01 /usr/libexec/gvfs-afc-volume-monitor
+root        1125  0.0  0.0 313904  7784 ?        Ssl  Jan26   0:00 /usr/libexec/accounts-daemon
+systemd+    1029  0.0  0.0  91044  7680 ?        Ssl  Jan26   0:00 /usr/lib/systemd/systemd-timesyncd
+thamizh     3024  0.0  0.0 314260  7680 ?        Ssl  Jan26   0:00 /usr/libexec/gvfsd
+thamizh     3238  0.0  0.0 459216  7680 ?        Ssl  Jan26   0:01 /usr/libexec/gsd-housekeeping
+systemd+    1027  0.0  0.0  17556  7424 ?        Ss   Jan26   0:08 /usr/lib/systemd/systemd-oomd
+root        1144  0.0  0.0 313508  7360 ?        Ssl  Jan26   0:00 /usr/libexec/power-profiles-daemon
+thamizh     3372  0.0  0.0 305492  7296 ?        Sl   Jan26   0:00 /usr/libexec/gsd-disk-utility-notify
+thamizh     2839  0.0  0.0 610292  7040 ?        Ssl  Jan26   0:00 /usr/libexec/xdg-document-portal
+thamizh     3030  0.0  0.0 459712  6912 ?        Sl   Jan26   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+thamizh     3474  0.0  0.0 310892  6912 ?        Ssl  Jan26   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+thamizh     3553  0.0  0.0 236772  6912 ?        Sl   Jan26   0:11 /usr/libexec/ibus-engine-simple
+thamizh     3055  0.0  0.0 162652  6784 ?        Ssl  Jan26   0:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/gcr
+thamizh     3361  0.0  0.0 310428  6656 ?        Sl   Jan26   0:00 /usr/libexec/ibus-portal
+message+    1130  0.0  0.0  12408  6528 ?        Ss   Jan26   0:05 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+thamizh     2796  0.0  0.0  11068  6528 ?        Ss   Jan26   0:03 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --sys
+thamizh     3342  0.0  0.0 236648  6528 ?        Sl   Jan26   0:00 /usr/libexec/ibus-memconf
+root        1162  0.0  0.0 309956  6400 ?        Ssl  Jan26   0:00 /usr/libexec/switcheroo-control
+thamizh     3853  0.0  0.0 236480  6400 ?        Ssl  Jan26   0:00 /usr/libexec/gvfsd-metadata
+thamizh     3229  0.0  0.0 383596  6272 ?        Ssl  Jan26   0:00 /usr/libexec/gsd-a11y-settings
+thamizh     3255  0.0  0.0 531084  6272 ?        Ssl  Jan26   0:00 /usr/libexec/gsd-rfkill
+root        1128  0.0  0.0  13544  6144 ?        Ss   Jan26   0:00 /usr/libexec/bluetooth/bluetoothd
+thamizh     3502  0.0  0.0 309924  6144 ?        Ssl  Jan26   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+thamizh     2844  0.0  0.0 309308  6016 ?        Ssl  Jan26   0:00 /usr/libexec/xdg-permission-store
+thamizh     2887  0.0  0.0 235712  6016 tty2     Ssl+ Jan26   0:00 /usr/libexec/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-sessio
+thamizh     3513  0.0  0.0 309772  6016 ?        Ssl  Jan26   0:00 /usr/libexec/gvfs-goa-volume-monitor
+thamizh     3256  0.0  0.0 309560  5888 ?        Ssl  Jan26   0:00 /usr/libexec/gsd-screensaver-proxy
+thamizh    15698  0.0  0.0  12044  5888 pts/1    Ss   Jan26   0:00 bash
+thamizh     2779  0.0  0.0  97736  5760 ?        Ssl  Jan26   0:00 /usr/bin/pipewire -c filter-chain.conf
+thamizh     3056  0.0  0.0  91548  5632 ?        Ssl  Jan26   0:00 /usr/libexec/gnome-session-ctl --monitor
+thamizh     3182  0.0  0.0 230468  5504 ?        Ssl  Jan26   0:00 /usr/libexec/dconf-service
+syslog      1262  0.0  0.0 222508  5376 ?        Ssl  Jan26   0:00 /usr/sbin/rsyslogd -n -iNONE
+www-data    1936  0.0  0.0 1999320 4964 ?        Sl   Jan26   0:00 /usr/sbin/apache2 -k start
+www-data    1938  0.0  0.0 1999320 4964 ?        Sl   Jan26   0:00 /usr/sbin/apache2 -k start
+root        1935  0.0  0.0   6804  4956 ?        Ss   Jan26   0:01 /usr/sbin/apache2 -k start
+thamizh     3045  0.0  0.0   9552  4864 ?        S    Jan26   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --prin
+thamizh    17743  0.0  0.0  13752  4736 pts/1    R+   03:32   0:00 ps aux --sort=-%mem
+thamizh    15921  0.0  0.0  12092  4608 pts/1    T    Jan26   0:00 vi config.txt
+avahi       1127  0.0  0.0   8600  3968 ?        Ss   Jan26   0:00 avahi-daemon: running [thamizh-HP-Pavilion-Laptop-15-eg2xxx.local]
+thamizh     2759  0.0  0.0  21400  3592 ?        S    Jan26   0:00 (sd-pam)
+thamizh     3895  0.0  0.0   9940  3456 ?        S    Jan26   0:00 /bin/bash /usr/bin/brave-browser-stable
+thamizh     3905  0.0  0.0 33577256 3456 ?       Sl   Jan26   0:00 /opt/brave.com/brave/chrome_crashpad_handler --monitor-self --monitor-self-annotation=ptype=crash
+thamizh     3907  0.0  0.0 33568020 3328 ?       Sl   Jan26   0:00 /opt/brave.com/brave/chrome_crashpad_handler --no-periodic-tasks --monitor-self-annotation=ptype=
+rtkit       2031  0.0  0.0  22940  3072 ?        SNsl Jan26   0:00 /usr/libexec/rtkit-daemon
+root        1129  0.0  0.0   9424  2816 ?        Ss   Jan26   0:00 /usr/sbin/cron -f -P
+kernoops    2712  0.0  0.0  12744  2196 ?        Ss   Jan26   0:00 /usr/sbin/kerneloops --test
+kernoops    2715  0.0  0.0  12744  2184 ?        Ss   Jan26   0:00 /usr/sbin/kerneloops
+root        2851  0.0  0.0   2704  1920 ?        Ss   Jan26   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+thamizh     3901  0.0  0.0   8428  1664 ?        S    Jan26   0:00 cat
+thamizh     3902  0.0  0.0   8428  1664 ?        S    Jan26   0:00 cat
+root       16434  0.0  0.0   3212  1664 ?        S    Jan26   0:00 sleep 3600
+avahi       1198  0.0  0.0   8420  1288 ?        S    Jan26   0:00 avahi-daemon: chroot helper
+root        1616  0.0  0.0   2892  1280 ?        Ss   Jan26   0:00 /bin/sh /snap/cups/1067/scripts/run-cups-browsed
+root        1620  0.0  0.0   2892  1280 ?        Ss   Jan26   0:00 /bin/sh /snap/cups/1067/scripts/run-cupsd
+root        2624  0.0  0.0   2892   768 ?        S    Jan26   0:00 /bin/sh /snap/cups/1067/scripts/run-cups-browsed
+root           2  0.0  0.0      0     0 ?        S    Jan26   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    Jan26   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-rcu_p]
+root           6  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-slub_]
+root           7  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-netns]
+root           9  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/0:0H-events_highpri]
+root          12  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-mm_pe]
+root          13  0.0  0.0      0     0 ?        I    Jan26   0:00 [rcu_tasks_kthread]
+root          14  0.0  0.0      0     0 ?        I    Jan26   0:00 [rcu_tasks_rude_kthread]
+root          15  0.0  0.0      0     0 ?        I    Jan26   0:00 [rcu_tasks_trace_kthread]
+root          16  0.0  0.0      0     0 ?        S    Jan26   0:00 [ksoftirqd/0]
+root          17  0.0  0.0      0     0 ?        I    Jan26   0:27 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    Jan26   0:11 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    Jan26   0:00 [idle_inject/0]
+root          20  0.0  0.0      0     0 ?        S    Jan26   0:00 [cpuhp/0]
+root          21  0.0  0.0      0     0 ?        S    Jan26   0:00 [cpuhp/2]
+root          22  0.0  0.0      0     0 ?        S    Jan26   0:00 [idle_inject/2]
+root          23  0.0  0.0      0     0 ?        S    Jan26   0:07 [migration/2]
+root          24  0.0  0.0      0     0 ?        S    Jan26   0:00 [ksoftirqd/2]
+root          26  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/2:0H-events_highpri]
+root          27  0.0  0.0      0     0 ?        S    Jan26   0:00 [cpuhp/4]
+root          28  0.0  0.0      0     0 ?        S    Jan26   0:00 [idle_inject/4]
+root          29  0.0  0.0      0     0 ?        S    Jan26   0:05 [migration/4]
+root          30  0.0  0.0      0     0 ?        S    Jan26   0:00 [ksoftirqd/4]
+root          31  0.0  0.0      0     0 ?        I    Jan26   0:04 [kworker/4:0-events]
+root          32  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/4:0H-events_highpri]
+root          33  0.0  0.0      0     0 ?        S    Jan26   0:00 [cpuhp/6]
+root          34  0.0  0.0      0     0 ?        S    Jan26   0:00 [idle_inject/6]
+root          35  0.0  0.0      0     0 ?        S    Jan26   0:03 [migration/6]
+root          36  0.0  0.0      0     0 ?        S    Jan26   0:00 [ksoftirqd/6]
+root          38  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/6:0H-kblockd]
+root          39  0.0  0.0      0     0 ?        S    Jan26   0:00 [cpuhp/8]
+root          40  0.0  0.0      0     0 ?        S    Jan26   0:00 [idle_inject/8]
+root          41  0.0  0.0      0     0 ?        S    Jan26   0:04 [migration/8]
+root          42  0.0  0.0      0     0 ?        S    Jan26   0:00 [ksoftirqd/8]
+root          44  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/8:0H-events_highpri]
+root          45  0.0  0.0      0     0 ?        S    Jan26   0:00 [cpuhp/9]
+root          46  0.0  0.0      0     0 ?        S    Jan26   0:00 [idle_inject/9]
+root          47  0.0  0.0      0     0 ?        S    Jan26   0:02 [migration/9]
+root          48  0.0  0.0      0     0 ?        S    Jan26   0:00 [ksoftirqd/9]
+root          50  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/9:0H-events_highpri]
+root          51  0.0  0.0      0     0 ?        S    Jan26   0:00 [cpuhp/10]
+root          52  0.0  0.0      0     0 ?        S    Jan26   0:00 [idle_inject/10]
+root          53  0.0  0.0      0     0 ?        S    Jan26   0:02 [migration/10]
+root          54  0.0  0.0      0     0 ?        S    Jan26   0:00 [ksoftirqd/10]
+root          55  0.0  0.0      0     0 ?        I    Jan26   0:01 [kworker/10:0-events]
+root          56  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/10:0H-events_highpri]
+root          57  0.0  0.0      0     0 ?        S    Jan26   0:00 [cpuhp/11]
+root          58  0.0  0.0      0     0 ?        S    Jan26   0:00 [idle_inject/11]
+root          59  0.0  0.0      0     0 ?        S    Jan26   0:01 [migration/11]
+root          60  0.0  0.0      0     0 ?        S    Jan26   0:00 [ksoftirqd/11]
+root          62  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/11:0H-events_highpri]
+root          63  0.0  0.0      0     0 ?        S    Jan26   0:00 [cpuhp/12]
+root          64  0.0  0.0      0     0 ?        S    Jan26   0:00 [idle_inject/12]
+root          65  0.0  0.0      0     0 ?        S    Jan26   0:09 [migration/12]
+root          66  0.0  0.0      0     0 ?        S    Jan26   0:00 [ksoftirqd/12]
+root          68  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/12:0H-events_highpri]
+root          69  0.0  0.0      0     0 ?        S    Jan26   0:00 [cpuhp/13]
+root          70  0.0  0.0      0     0 ?        S    Jan26   0:00 [idle_inject/13]
+root          71  0.0  0.0      0     0 ?        S    Jan26   0:06 [migration/13]
+root          72  0.0  0.0      0     0 ?        S    Jan26   0:00 [ksoftirqd/13]
+root          74  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/13:0H-events_highpri]
+root          75  0.0  0.0      0     0 ?        S    Jan26   0:00 [cpuhp/14]
+root          76  0.0  0.0      0     0 ?        S    Jan26   0:00 [idle_inject/14]
+root          77  0.0  0.0      0     0 ?        S    Jan26   0:04 [migration/14]
+root          78  0.0  0.0      0     0 ?        S    Jan26   0:00 [ksoftirqd/14]
+root          80  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/14:0H-events_highpri]
+root          81  0.0  0.0      0     0 ?        S    Jan26   0:00 [cpuhp/15]
+root          82  0.0  0.0      0     0 ?        S    Jan26   0:00 [idle_inject/15]
+root          83  0.0  0.0      0     0 ?        S    Jan26   0:03 [migration/15]
+root          84  0.0  0.0      0     0 ?        S    Jan26   0:00 [ksoftirqd/15]
+root          86  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/15:0H-events_highpri]
+root          87  0.0  0.0      0     0 ?        S    Jan26   0:00 [cpuhp/1]
+root          88  0.0  0.0      0     0 ?        S    Jan26   0:00 [idle_inject/1]
+root          89  0.0  0.0      0     0 ?        S    Jan26   0:02 [migration/1]
+root          90  0.0  0.0      0     0 ?        S    Jan26   0:00 [ksoftirqd/1]
+root          92  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/1:0H-events_highpri]
+root          93  0.0  0.0      0     0 ?        S    Jan26   0:00 [cpuhp/3]
+root          94  0.0  0.0      0     0 ?        S    Jan26   0:00 [idle_inject/3]
+root          95  0.0  0.0      0     0 ?        S    Jan26   0:01 [migration/3]
+root          96  0.0  0.0      0     0 ?        S    Jan26   0:00 [ksoftirqd/3]
+root          98  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/3:0H-events_highpri]
+root          99  0.0  0.0      0     0 ?        S    Jan26   0:00 [cpuhp/5]
+root         100  0.0  0.0      0     0 ?        S    Jan26   0:00 [idle_inject/5]
+root         101  0.0  0.0      0     0 ?        S    Jan26   0:01 [migration/5]
+root         102  0.0  0.0      0     0 ?        S    Jan26   0:00 [ksoftirqd/5]
+root         104  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/5:0H-events_highpri]
+root         105  0.0  0.0      0     0 ?        S    Jan26   0:00 [cpuhp/7]
+root         106  0.0  0.0      0     0 ?        S    Jan26   0:00 [idle_inject/7]
+root         107  0.0  0.0      0     0 ?        S    Jan26   0:00 [migration/7]
+root         108  0.0  0.0      0     0 ?        S    Jan26   0:00 [ksoftirqd/7]
+root         109  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/7:0-events]
+root         110  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/7:0H-events_highpri]
+root         111  0.0  0.0      0     0 ?        S    Jan26   0:00 [kdevtmpfs]
+root         112  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-inet_]
+root         113  0.0  0.0      0     0 ?        S    Jan26   0:00 [kauditd]
+root         116  0.0  0.0      0     0 ?        S    Jan26   0:00 [khungtaskd]
+root         117  0.0  0.0      0     0 ?        S    Jan26   0:00 [oom_reaper]
+root         119  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-write]
+root         120  0.0  0.0      0     0 ?        S    Jan26   0:01 [kcompactd0]
+root         121  0.0  0.0      0     0 ?        SN   Jan26   0:00 [ksmd]
+root         122  0.0  0.0      0     0 ?        SN   Jan26   0:00 [khugepaged]
+root         123  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-kinte]
+root         124  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-kbloc]
+root         125  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-blkcg]
+root         127  0.1  0.0      0     0 ?        S    Jan26   1:39 [irq/9-acpi]
+root         128  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-tpm_d]
+root         129  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-ata_s]
+root         130  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-md]
+root         131  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-md_bi]
+root         132  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-edac-]
+root         133  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-devfr]
+root         135  0.0  0.0      0     0 ?        S    Jan26   0:00 [watchdogd]
+root         136  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/13:1H]
+root         137  0.0  0.0      0     0 ?        S    Jan26   0:00 [kswapd0]
+root         138  0.0  0.0      0     0 ?        S    Jan26   0:00 [ecryptfs-kthread]
+root         139  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-kthro]
+root         140  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-acpi_]
+root         143  0.0  0.0      0     0 ?        S    Jan26   0:00 [hwrng]
+root         144  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-hfi-u]
+root         147  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-mld]
+root         148  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/9:1H-events_highpri]
+root         149  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-ipv6_]
+root         157  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-kstrp]
+root         160  0.0  0.0      0     0 ?        I    Jan26   0:01 [kworker/11:1-events]
+root         162  0.0  0.0      0     0 ?        I    Jan26   0:01 [kworker/3:1-mm_percpu_wq]
+root         165  0.0  0.0      0     0 ?        I<   Jan26   0:28 [kworker/u33:0-i915_flip]
+root         180  0.0  0.0      0     0 ?        I    Jan26   0:02 [kworker/9:3-cgroup_destroy]
+root         181  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-charg]
+root         204  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/10:1H-kblockd]
+root         208  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/15:1H-events_highpri]
+root         209  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/2:1H]
+root         233  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/6:1H]
+root         234  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/3:1H-events_highpri]
+root         238  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/11:1H-kblockd]
+root         262  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/1:1H-events_highpri]
+root         263  0.0  0.0      0     0 ?        I    Jan26   0:01 [kworker/5:1-events]
+root         264  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/0:1H]
+root         265  0.0  0.0      0     0 ?        I<   Jan26   0:01 [kworker/14:1H-events_highpri]
+root         266  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/7:1H-kblockd]
+root         268  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/12:1H-kblockd]
+root         269  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/8:1H-events_highpri]
+root         270  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/4:1H-events_highpri]
+root         271  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/5:1H-events_highpri]
+root         338  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-nvme-]
+root         339  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-nvme-]
+root         340  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-nvme-]
+root         343  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-nvme-]
+root         359  0.1  0.0      0     0 ?        S    Jan26   1:13 [irq/157-SYNA32CE:00]
+root         400  0.0  0.0      0     0 ?        S    Jan26   0:03 [jbd2/nvme0n1p5-8]
+root         401  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-ext4-]
+root         593  0.0  0.0      0     0 ?        I    Jan26   0:02 [kworker/8:2-mm_percpu_wq]
+root         600  0.0  0.0      0     0 ?        S    Jan26   0:00 [psimon]
+root         796  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-cfg80]
+root         805  0.0  0.0      0     0 ?        S    Jan26   0:00 [irq/16-processor_thermal_device_pci]
+root         814  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-crypt]
+root         825  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-ttm]
+root         830  0.0  0.0      0     0 ?        S    Jan26   0:00 [card1-crtc0]
+root         831  0.0  0.0      0     0 ?        S    Jan26   0:00 [card1-crtc1]
+root         832  0.0  0.0      0     0 ?        S    Jan26   0:00 [card1-crtc2]
+root         833  0.0  0.0      0     0 ?        S    Jan26   0:00 [card1-crtc3]
+root         870  0.0  0.0      0     0 ?        S    Jan26   0:19 [napi/phy0-8193]
+root         872  0.0  0.0      0     0 ?        S    Jan26   0:00 [napi/phy0-8194]
+root         874  0.0  0.0      0     0 ?        S    Jan26   0:12 [napi/phy0-8195]
+root        1343  0.0  0.0      0     0 ?        S    Jan26   0:09 [mt76-tx phy0]
+root        1398  0.0  0.0      0     0 ?        S    Jan26   0:00 [irq/161-AudioDSP]
+root        2114  0.0  0.0      0     0 ?        S<   Jan26   0:00 [krfcommd]
+root        5518  0.0  0.0      0     0 ?        S    Jan26   0:00 [psimon]
+root        5649  0.0  0.0      0     0 ?        I    Jan26   0:02 [kworker/14:1-events]
+root        6647  0.0  0.0      0     0 ?        I<   Jan26   0:00 [kworker/R-tls-s]
+root        7176  0.0  0.0      0     0 ?        I    Jan26   0:01 [kworker/15:0-mm_percpu_wq]
+root        9283  0.0  0.0      0     0 ?        I    Jan26   0:03 [kworker/2:2-mm_percpu_wq]
+root       15633  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/12:0-mm_percpu_wq]
+root       15641  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/7:1]
+root       15648  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/9:0-mm_percpu_wq]
+root       15822  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/1:0-events]
+root       15910  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/0:2-events]
+root       16601  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/11:0-mm_percpu_wq]
+root       16614  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/13:2-events]
+root       16770  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/1:1]
+root       16803  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/10:2]
+root       16806  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/8:1]
+root       16833  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/13:1]
+root       16885  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/6:0-mm_percpu_wq]
+root       17180  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/0:0-events]
+root       17223  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/14:2]
+root       17227  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/u32:13-writeback]
+root       17231  0.0  0.0      0     0 ?        I    Jan26   0:01 [kworker/u32:17-events_power_efficient]
+root       17232  0.0  0.0      0     0 ?        I    Jan26   0:00 [kworker/2:0-events]
+root       17254  0.0  0.0      0     0 ?        I    Jan26   0:02 [kworker/u32:39-events_unbound]
+root       17261  0.0  0.0      0     0 ?        R    Jan26   0:01 [kworker/u32:46+mt76]
+root       17269  0.0  0.0      0     0 ?        S    Jan26   0:00 [irq/140-mei_me]
+root       17270  0.0  0.0      0     0 ?        I    03:22   0:00 [kworker/6:2-mm_percpu_wq]
+root       17272  0.0  0.0      0     0 ?        I    03:22   0:00 [kworker/5:3-mm_percpu_wq]
+root       17348  0.0  0.0      0     0 ?        I    03:22   0:00 [kworker/3:2-cgroup_destroy]
+root       17397  0.0  0.0      0     0 ?        I    03:22   0:00 [kworker/15:1]
+root       17424  0.2  0.0      0     0 ?        D<   03:22   0:01 [kworker/u33:2+i915_flip]
+root       17496  0.0  0.0      0     0 ?        I    03:22   0:00 [kworker/4:1-inet_frag_wq]
+root       17607  0.0  0.0      0     0 ?        I    03:26   0:00 [kworker/12:1]
+root       17708  0.0  0.0      0     0 ?        I    03:28   0:00 [kworker/4:2-events]
+root       17709  0.0  0.0      0     0 ?        I    03:28   0:00 [kworker/8:0]
+root       17740  0.0  0.0      0     0 ?        I<   03:32   0:00 [kworker/u33:1]
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_2$ pid=$(ps aux --sort=-%mem | awk 'NR==2 {print $2}') && kill $pid
+
