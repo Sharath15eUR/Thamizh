@@ -1,0 +1,5 @@
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_4$ nano filter.sh 
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_4$ chmod +x filter.sh 
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_4$ ./filter.sh "input.txt"
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_4$ ls
+filter.sh  input.txt  op.txt
