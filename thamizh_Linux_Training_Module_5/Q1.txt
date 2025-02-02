@@ -1,0 +1,25 @@
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_5$ nano file_analyzer.sh 
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_5$ chmod +x file_analyzer.sh 
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_5$ ./file_analyzer.sh -f module1.txt -k world
+(standard input):1:the world is full of lies
+(standard input):2:Hello world, I am Thamizh
+(standard input):3:There are more worlds in the universe
+(standard input):4:A universe is a collection of worlds
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_5$ ./file_analyzer.sh --help
+Usage: "./file_analyzer.sh" [OPTIONS]
+OPTIONS:
+-d <directory> Search for  keywords in a directory
+-f <file> Search for keywords in a file
+-k <keyword> Keyword to be searched
+--help displays the help information
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_5$ ./file_analyzer.sh -d dir1 -k ERROR
+dir1/dir2/file:4:[ERROR] 2024-02-02 10:07:45 - Failed to connect to database: Connection timeout.
+dir1/dir2/file:6:[ERROR] 2024-02-02 10:09:20 - File '/var/log/missing.log' not found.
+dir1/dir2/file:9:[ERROR] 2024-02-02 10:10:45 - Backup failed: Insufficient permissions.
+dir1/dir2/file:13:[ERROR] 2024-02-02 10:18:20 - Network unreachable: Could not resolve hostname.
+dir1/dir2/file:4:[ERROR] 2024-02-02 10:07:45 - Failed to connect to database: Connection timeout.
+dir1/dir2/file:6:[ERROR] 2024-02-02 10:09:20 - File '/var/log/missing.log' not found.
+dir1/dir2/file:9:[ERROR] 2024-02-02 10:10:45 - Backup failed: Insufficient permissions.
+dir1/dir2/file:13:[ERROR] 2024-02-02 10:18:20 - Network unreachable: Could not resolve hostname.
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/linux_office/assignment/thamizh_Linux_Training_Module_5$ ./file_analyzer.sh -l dir1 -k ERROR
+[ERROR] Invalid options: l
