@@ -1,0 +1,55 @@
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~$ sudo tcpdump -c 10
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on wlp1s0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+13:35:06.235108 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.57938 > maa03s42-in-f14.1e100.net.https: UDP, length 29
+13:35:06.240394 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.35007 > _gateway.domain: 3442+ [1au] PTR? 206.195.250.142.in-addr.arpa. (57)
+13:35:06.244341 IP _gateway.domain > thamizh-HP-Pavilion-Laptop-15-eg2xxx.35007: 3442 1/0/1 PTR maa03s42-in-f14.1e100.net. (96)
+13:35:06.246078 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.53507 > _gateway.domain: 16137+ [1au] PTR? 5.1.168.192.in-addr.arpa. (53)
+13:35:06.249452 IP _gateway.domain > thamizh-HP-Pavilion-Laptop-15-eg2xxx.53507: 16137 NXDomain 0/0/1 (53)
+13:35:06.262534 IP maa03s42-in-f14.1e100.net.https > thamizh-HP-Pavilion-Laptop-15-eg2xxx.57938: UDP, length 24
+13:35:06.342514 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.36150 > _gateway.domain: 52196+ [1au] PTR? 1.1.168.192.in-addr.arpa. (53)
+13:35:06.346440 IP _gateway.domain > thamizh-HP-Pavilion-Laptop-15-eg2xxx.36150: 52196 NXDomain 0/0/1 (53)
+13:35:06.435510 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.46199 > maa05s23-in-f3.1e100.net.https: UDP, length 1250
+13:35:06.435546 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.46199 > maa05s23-in-f3.1e100.net.https: UDP, length 1250
+10 packets captured
+18 packets received by filter
+0 packets dropped by kernel
+
+--- FILTERING TCP PACKETS----
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~$ sudo tcpdump -c 10 tcp
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on wlp1s0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+13:35:30.700401 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.51392 > _gateway.domain: Flags [S], seq 3251048526, win 64240, options [mss 1460,sackOK,TS val 3233015244 ecr 0,nop,wscale 7,tfo  cookiereq,nop,nop], length 0
+13:35:30.701976 IP _gateway.domain > thamizh-HP-Pavilion-Laptop-15-eg2xxx.51392: Flags [S.], seq 2994942121, ack 3251048527, win 28960, options [mss 1460,sackOK,TS val 1248339 ecr 3233015244,nop,wscale 5], length 0
+13:35:30.702025 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.51392 > _gateway.domain: Flags [.], ack 1, win 502, options [nop,nop,TS val 3233015246 ecr 1248339], length 0
+13:35:30.702132 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.51392 > _gateway.domain: Flags [P.], seq 1:47, ack 1, win 502, options [nop,nop,TS val 3233015246 ecr 1248339], length 46 65389+ [1au] A? www.youtube.com. (44)
+13:35:30.703793 IP _gateway.domain > thamizh-HP-Pavilion-Laptop-15-eg2xxx.51392: Flags [.], ack 47, win 905, options [nop,nop,TS val 1248339 ecr 3233015246], length 0
+13:35:30.765550 IP _gateway.domain > thamizh-HP-Pavilion-Laptop-15-eg2xxx.51392: Flags [P.], seq 1:2, ack 47, win 905, options [nop,nop,TS val 1248345 ecr 3233015246], length 1 [DNS over TCP: length 1 < 2] (invalid)
+13:35:30.765611 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.51392 > _gateway.domain: Flags [.], ack 2, win 502, options [nop,nop,TS val 3233015309 ecr 1248345], length 0
+13:35:30.766417 IP _gateway.domain > thamizh-HP-Pavilion-Laptop-15-eg2xxx.51392: Flags [P.], seq 2:337, ack 47, win 905, options [nop,nop,TS val 1248345 ecr 3233015309], length 335 [prefix length(20223) != length(333)] (invalid)
+13:35:30.766473 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.51392 > _gateway.domain: Flags [.], ack 337, win 501, options [nop,nop,TS val 3233015310 ecr 1248345], length 0
+13:35:30.772860 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.49760 > maa05s21-in-f10.1e100.net.https: Flags [F.], seq 693418182, ack 3888260016, win 654, options [nop,nop,TS val 950305671 ecr 1486069718], length 0
+10 packets captured
+19 packets received by filter
+0 packets dropped by kernel
+
+--- FILTERING PARTICULAR PORT PACKETS FROM A PARTICULAR WIFI----
+
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~$ sudo tcpdump -c 10 -i wlp1s0 port 443
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on wlp1s0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+13:35:59.429252 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.41434 > whatsapp-cdn-shv-02-maa2.fbcdn.net.https: Flags [P.], seq 2125377542:2125377611, ack 4086538843, win 671, options [nop,nop,TS val 1357003372 ecr 2600147669], length 69
+13:35:59.431731 IP whatsapp-cdn-shv-02-maa2.fbcdn.net.https > thamizh-HP-Pavilion-Laptop-15-eg2xxx.41434: Flags [.], ack 69, win 982, options [nop,nop,TS val 2600164452 ecr 1357003372], length 0
+13:35:59.646945 IP whatsapp-cdn-shv-02-maa2.fbcdn.net.https > thamizh-HP-Pavilion-Laptop-15-eg2xxx.41434: Flags [P.], seq 1:72, ack 69, win 982, options [nop,nop,TS val 2600164666 ecr 1357003372], length 71
+13:35:59.647146 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.41434 > whatsapp-cdn-shv-02-maa2.fbcdn.net.https: Flags [.], ack 72, win 671, options [nop,nop,TS val 1357003590 ecr 2600164666], length 0
+13:36:01.532952 IP whatsapp-cdn-shv-02-maa2.fbcdn.net.https > thamizh-HP-Pavilion-Laptop-15-eg2xxx.41434: Flags [P.], seq 72:298, ack 69, win 982, options [nop,nop,TS val 2600166553 ecr 1357003590], length 226
+13:36:01.533067 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.41434 > whatsapp-cdn-shv-02-maa2.fbcdn.net.https: Flags [.], ack 298, win 671, options [nop,nop,TS val 1357005476 ecr 2600166553], length 0
+13:36:01.564964 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.34062 > static.71.91.90.157.clients.your-server.de.https: Flags [.], ack 238149908, win 665, options [nop,nop,TS val 4144424712 ecr 1548626139], length 0
+13:36:01.715660 IP static.71.91.90.157.clients.your-server.de.https > thamizh-HP-Pavilion-Laptop-15-eg2xxx.34062: Flags [.], ack 1, win 501, options [nop,nop,TS val 1548671705 ecr 4144333819], length 0
+13:36:01.744508 IP thamizh-HP-Pavilion-Laptop-15-eg2xxx.41434 > whatsapp-cdn-shv-02-maa2.fbcdn.net.https: Flags [P.], seq 69:143, ack 298, win 671, options [nop,nop,TS val 1357005687 ecr 2600166553], length 74
+13:36:01.747823 IP whatsapp-cdn-shv-02-maa2.fbcdn.net.https > thamizh-HP-Pavilion-Laptop-15-eg2xxx.41434: Flags [.], ack 143, win 982, options [nop,nop,TS val 2600166768 ecr 1357005687], length 0
+10 packets captured
+10 packets received by filter
+0 packets dropped by kernel

@@ -1,0 +1,14 @@
+Anydesk 
+
+	It is one of the software application used to connect and control 
+	a remote machine. 
+
+	Install the anydesk from its official website
+	Both the remote viewer and accesser can install the same version (but
+ this is only possible with anydesk , as in case of others, there are 
+different versions available for viewer and accesser)
+	Enter the address of the remote machine (which is shown on the screen
+	Then on accepting the connection , we can connect and control the
+	remote system
+
+

@@ -1,0 +1,7 @@
+Cisco packet tracer is used to simulate network topologies and related 
+concepts without requiring the hardware
+
+The picture shows the two end devices connected with each other a ethernet 
+cable
+
+The ethernet cable is a copper cross over cable used to make conenction

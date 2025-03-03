@@ -1,0 +1,34 @@
+	SCP - COMMAND
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office$ sudo systemctl start ssh
+[sudo] password for thamizh: 
+Sorry, try again.
+[sudo] password for thamizh: 
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office$ sudo systemctl enable ssh
+Synchronizing state of ssh.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable ssh
+Created symlink /etc/systemd/system/sshd.service → /usr/lib/systemd/system/ssh.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/ssh.service → /usr/lib/systemd/system/ssh.service.
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office$ hostname -I
+192.168.1.5 
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office$ scp -r /home/thamizh/Desktop/src_dir/ thamizh@192.168.1.5:/home/thamizh/Desktop/dest_dir
+The authenticity of host '192.168.1.5 (192.168.1.5)' can't be established.
+ED25519 key fingerprint is SHA256:6k3885FZ+NkVntxHKMwtE6UYM/To/tCinmW9UZXmWwQ.
+This host key is known by the following other names/addresses:
+    ~/.ssh/known_hosts:1: [hashed name]
+    ~/.ssh/known_hosts:4: [hashed name]
+    ~/.ssh/known_hosts:5: [hashed name]
+    ~/.ssh/known_hosts:6: [hashed name]
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.1.5' (ED25519) to the list of known hosts.
+hello2.txt                                                              100%   75    66.4KB/s   00:00    
+hello1.txt                                                              100%   73    68.0KB/s   00:00 
+
+
+CP - COMMAND 
+
+
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ cp -r ~/Desktop/src_dir/ ~/Desktop/dest_dir2/
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ cd ~/Desktop/dest_dir2/ && ls
+src_dir

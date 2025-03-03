@@ -1,0 +1,133 @@
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ sudo apt install vsftpd -y
+[sudo] password for thamizh: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libfprint-2-2 libfprint-2-tod1 libllvm17t64 python3-netifaces
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  vsftpd
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 120 kB of archives.
+After this operation, 312 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu noble-updates/main amd64 vsftpd amd64 3.0.5-0ubuntu3.1 [120 kB]
+Fetched 120 kB in 1s (183 kB/s)  
+Preconfiguring packages ...
+Selecting previously unselected package vsftpd.
+(Reading database ... 246373 files and directories currently installed.)
+Preparing to unpack .../vsftpd_3.0.5-0ubuntu3.1_amd64.deb ...
+Unpacking vsftpd (3.0.5-0ubuntu3.1) ...
+Setting up vsftpd (3.0.5-0ubuntu3.1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/vsftpd.service → /usr/lib/systemd/system/vsftpd.service.
+Processing triggers for man-db (2.12.0-4build2) ...
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ sudo useradd ftpuser
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ sudo password ftpuser
+sudo: password: command not found
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ sudo passwd ftpuser
+New password: 
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: 
+passwd: password updated successfully
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ sudo nano /etc/vsftpd.conf 
+[sudo] password for thamizh: 
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ sudo systemctl restart vsftpd
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ sudo systemctl enable vsftpd
+Synchronizing state of vsftpd.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable vsftpd
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ sudo ufw allow 21/tcp
+Rules updated
+Rules updated (v6)
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ ftp 192.168.1.5
+Connected to 192.168.1.5.
+220 (vsFTPd 3.0.5)
+Name (192.168.1.5:thamizh): ftpuser
+331 Please specify the password.
+Password: 
+500 OOPS: cannot change directory:/home/ftpuser
+ftp: Login failed
+ftp> 
+ftp> 
+ftp> quit
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ ftp 192.168.1.5
+Connected to 192.168.1.5.
+220 (vsFTPd 3.0.5)
+Name (192.168.1.5:thamizh): ftpuser
+331 Please specify the password.
+Password: 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> put rough.txt 
+local: rough.txt remote: rough.txt
+ftp: No control connection for command
+421 Timeout.
+ftp> quit
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ sudo ufw allow 20/tcp
+[sudo] password for thamizh: 
+Rules updated
+Rules updated (v6)
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ ftp 192.168.1.5
+Connected to 192.168.1.5.
+220 (vsFTPd 3.0.5)
+Name (192.168.1.5:thamizh): ftpuser
+331 Please specify the password.
+Password: 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> put rough.txt 
+local: rough.txt remote: rough.txt
+229 Entering Extended Passive Mode (|||12433|)
+150 Ok to send data.
+100% |*******************************************************************|    50        8.69 KiB/s    00:00 ETA
+226 Transfer complete.
+50 bytes sent in 00:00 (8.07 KiB/s)
+ftp> bye
+221 Goodbye.
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ sudo ls -l /home/ftpuser/
+total 4
+-rw------- 1 ftpuser ftpuser 50 Feb 26 01:52 rough.txt
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ sudo adduser sftp
+info: Adding user `sftp' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `sftp' (1002) ...
+info: Adding new user `sftp' (1002) with group `sftp (1002)' ...
+info: Creating home directory `/home/sftp' ...
+info: Copying files from `/etc/skel' ...
+New password: 
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for sftp
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] y
+info: Adding new user `sftp' to supplemental / extra groups `users' ...
+info: Adding user `sftp' to group `users' ...
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ sftp sftp@192.168.1.5
+sftp@192.168.1.5's password: 
+Connected to 192.168.1.5.
+sftp> bye
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ sftp ftp@192.168.1.5
+ftp@192.168.1.5's password: 
+Permission denied, please try again.
+ftp@192.168.1.5's password: 
+Permission denied, please try again.
+ftp@192.168.1.5's password: 
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ sftp sftp@192.168.1.5
+sftp@192.168.1.5's password: 
+Connected to 192.168.1.5.
+sftp> put rough.txt 
+Uploading rough.txt to /home/sftp/rough.txt
+rough.txt                                                                     100%   50    64.2KB/s   00:00    
+sftp> get op.txt
+File "/home/sftp/op.txt" not found.
+sftp> get rough.txt 
+Fetching /home/sftp/rough.txt to rough.txt
+rough.txt                                                                     100%   50    31.5KB/s   00:00    
+sftp> quit

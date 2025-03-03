@@ -1,0 +1,16 @@
+Connecting to a remote machine using SSH and telnet
+
+SSH : 
+	Secure Shell is the recommended way to connect to a remote machine
+	as it provides encryption. To connect to a remote machine use,
+
+		$ssh username@remote_ip 
+	then enter the password
+
+Telnet:
+	Telnet sends every data including password as a plain text so there
+	is no encryption. To connect to a remote machine via telent use,
+	
+		$telnet remote_ip
+
+Note: we can also specify the ports in both kind of connections

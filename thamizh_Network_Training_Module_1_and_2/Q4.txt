@@ -1,0 +1,54 @@
+--- PING COMMAND ----
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Downloads$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: wlp1s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether e8:fb:1c:48:c3:1f brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.5/24 brd 192.168.1.255 scope global dynamic noprefixroute wlp1s0
+       valid_lft 76010sec preferred_lft 76010sec
+    inet6 fe80::1a8:506c:9263:8672/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Downloads$ ping -c 3 192.168.1.5
+PING 192.168.1.5 (192.168.1.5) 56(84) bytes of data.
+64 bytes from 192.168.1.5: icmp_seq=1 ttl=64 time=0.231 ms
+64 bytes from 192.168.1.5: icmp_seq=2 ttl=64 time=0.095 ms
+64 bytes from 192.168.1.5: icmp_seq=3 ttl=64 time=0.164 ms
+
+--- 192.168.1.5 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2052ms
+rtt min/avg/max/mdev = 0.095/0.163/0.231/0.055 ms
+
+
+--- ARP COMMAND ----
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Downloads$ arp -a
+_gateway (192.168.1.1) at 44:95:3b:74:b6:90 [ether] on wlp1s0
+? (192.168.1.39) at <incomplete> on wlp1s0
+
+
+--- IFCONFIG COMMAND ---
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Downloads$ ifconfig
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 13537  bytes 1401089 (1.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 13537  bytes 1401089 (1.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp1s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.5  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 fe80::1a8:506c:9263:8672  prefixlen 64  scopeid 0x20<link>
+        ether e8:fb:1c:48:c3:1f  txqueuelen 1000  (Ethernet)
+        RX packets 428992  bytes 442230961 (442.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 173057  bytes 55366249 (55.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+

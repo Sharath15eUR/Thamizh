@@ -1,0 +1,35 @@
+iwconfig = is used to find wireless network interface details
+ifconfig is used to find both wired and wireless network interface details
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ ifconfig
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 2901  bytes 262606 (262.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2901  bytes 262606 (262.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp1s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.5  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 fe80::1a8:506c:9263:8672  prefixlen 64  scopeid 0x20<link>
+        ether e8:fb:1c:48:c3:1f  txqueuelen 1000  (Ethernet)
+        RX packets 60828  bytes 57837015 (57.8 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 30865  bytes 10426127 (10.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ iwconfig
+lo        no wireless extensions.
+
+wlp1s0    IEEE 802.11  ESSID:"MKTB"  
+          Mode:Managed  Frequency:5.765 GHz  Access Point: 44:95:3B:74:B6:91   
+          Bit Rate=526.6 Mb/s   Tx-Power=3 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:on
+          Link Quality=67/70  Signal level=-43 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+
+From the iwconfig , the speed of the interface is 526.6 Mb/s

@@ -1,0 +1,11 @@
+When two computers in a network share the same IP, there will conflict in 
+data transmission and as well as conflict in ARP table
+
+The ARP table keeps on changing the MAC address, as there are duplicate IPs; 
+So the data will not be transmitted
+
+Somtimes the router or swtich may share it to any one of the device randomly
+
+Some OS support automatically removing the duplicate IP
+
+Using DHCP , we can solve this as DHCP reassigns a new IP

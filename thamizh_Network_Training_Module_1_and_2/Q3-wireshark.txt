@@ -1,0 +1,4 @@
+Wireshark is a tool used to capture packets in realtime 
+It supports many filters such as protocol , device and also ports etc..
+It also provides the real time data sent including the number of 
+packets sent and received

@@ -1,0 +1,23 @@
+Navigate to browser and enter 192.168.1.1 which will redirect you to 
+your home router's admin page
+
+Enter the login credentials as mentioned on your backside of the router
+
+Once logged in you should be able to see the available options to control
+We can even set firewall to control network traffic
+
+As my router provider didn't give the option to show the list of available
+devices, i am using arp scan
+
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_1_and_2$ sudo arp-scan --localnet
+Interface: wlp1s0, type: EN10MB, MAC: e8:fb:1c:48:c3:1f, IPv4: 192.168.1.5
+Starting arp-scan 1.10.0 with 256 hosts (https://github.com/royhills/arp-scan)
+192.168.1.1	44:95:3b:74:b6:90	RLTech India Private Limited
+192.168.1.4	4e:0e:6b:ac:32:3b	(Unknown: locally administered)
+
+2 packets received by filter, 0 packets dropped by kernel
+Ending arp-scan 1.10.0: 256 hosts scanned in 2.034 seconds (125.86 hosts/sec). 2 responded
+
+
+These shows the two devices i.e. my laptop and my phone connected to my wifi

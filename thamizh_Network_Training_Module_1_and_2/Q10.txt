@@ -1,0 +1,21 @@
+DHCP
+
+   The DHCP assigns IP addresses automatically to all the devices that join
+   in a network using the DORA method
+
+DORA method:
+	
+	Step 1 : The device which entered the network (without IP) would 
+		broadcast a DHCP DISCOVER message to all the devices in the
+		network
+	Step 2: The DHCP server receives this request and check its IP pool 
+		for any available IP; it selects an IP address and sends it
+		to the client device by DHCP OFFER message along with IP,
+		subnet mask, DNS server, default gateway, lease duration
+	Step 3: The client accepts the assigned IP by sending a DHCP REQUEST
+		message
+	Step 4: The DHCP server acknowledges the request by sending a 
+		DHCP ACKNOWLEDGEMENT message to the client
+
+When the lease time is half expired the client again sends a message to the
+DHCP server for renewal
