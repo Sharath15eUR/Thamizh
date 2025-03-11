@@ -1,0 +1,12 @@
+To configure a LAN interface using the ip command :
+
+#ip link show : this command will show all the available interfaces along
+ with their status and MAC address and MTU etc.
+
+If a interface is down , we can bring it up by using 
+ #sudo ip link set wlp1s0 up
+Then add a static ip for it
+ #sudo ip addr add 192.168.1.100/24 dev wlp1s0
+Then add a gateway for it
+ #sudo ip route default via 192.168.1.1
+

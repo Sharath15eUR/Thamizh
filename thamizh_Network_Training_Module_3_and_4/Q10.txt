@@ -1,0 +1,37 @@
+MAC Address table :
+	Switch uses the MAC address table for packet transmission.
+When we want send packets to a system we know only its IP address but
+switch needs MAC address to find the system and so we use the ARP protocol
+which is sent as a broadcast asking "Tell. who has IP 192.168.1.10"
+	As soon as a Arp protocol is sent, it stores the MAC address 
+of the sender in the MAC table and once it gets the ARP reply it stores
+the required MAC address too in the table
+
+IP link command : 
+	The IP link command is used to show all the available interfaces
+along with the important details such as MTU,status and etc.
+
+We can see the mac address table using the ,
+  #bridge fdb show
+
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_3_and_4$ bridge fdb show
+01:00:5e:00:00:01 dev wlp1s0 self permanent
+01:00:5e:00:00:fb dev wlp1s0 self permanent
+33:33:00:00:00:01 dev wlp1s0 self permanent
+33:33:ff:63:86:72 dev wlp1s0 self permanent
+33:33:00:00:00:fb dev wlp1s0 self permanent
+
+
+This command shows the MAC address and the device (wifi) using which the mac
+address has been learnt;
+
+To manually add a bridge ,
+	sudo ip link add bridge br0 type bridge
+	sudo ip link set br0 up
+
+Adding interfaces to the bridge,
+	sudo ip link set eth0 master br0
+	sudo ip link set eth1 master br0
+
+Now the linux machine can work as a bridge

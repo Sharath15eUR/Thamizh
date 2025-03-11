@@ -1,0 +1,7 @@
+traceroute command is used to trace the path taken by the packet which we sent;
+
+While pining a system if the system is unavailable, we can check where the packet has been
+dropped by using the traceroute command ; the traceroute command will show all the hops taken
+by the packet
+
+The command in linux/windows is : traceroute <IP> / tracert <IP>

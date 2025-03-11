@@ -1,0 +1,14 @@
+A small network with switch and multiple devices has been created with the
+cisco packet tracer. Switch is used to connect devices within the same network
+
+We should statically configure the IP for the two devices and switch operates
+at layer 2 , no need for configuring IP for it
+
+After configruing the IP and connecting both the systems to swtich using
+ethernet cable , we can ping one pc from the another
+
+At first, the MAC address of the destination PC will not be known, so it will
+broadcast a ARP request and finds out the destination PC MAC address
+
+We can see this in the MAC address table of the switch; the command to show is
+	show mac address-table

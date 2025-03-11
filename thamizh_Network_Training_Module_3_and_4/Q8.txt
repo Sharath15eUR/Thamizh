@@ -1,0 +1,27 @@
+A short report on Kernel's handling of ethernet devices
+
+Linux kernel represents the ethernet interfaces using the data structure
+called net_device. It is structure and has fields like MTU (maximum
+transmission unit),MAC address etc. We can show these interfaces using the 
+command #ip show link command
+
+
+The NIC interacts with the kernel using the device drivers which is located
+in the /drivers/net. These drivers are essential for registering the NIC 
+with the kernel and there are some functions used to register and dynamically
+allocate the drivers and they include register_netdev(),ndo_open()...
+
+Packet Receiving and transmission:
+	The packets received by the NIC will be sent to the kernel using
+the netif_rx() function with the help of the drivers, the kernel then it
+places the packets in the rx_queue and then forward to the appropriate protocol
+Linux follows OSI model and so it uses layer 2 for processing ethernet frames 
+and layer 3 for forwarding it.
+ 
+	The applications will send the data to the kernel via the sockets
+i.e. the system calls. The kernel passes it to the appropriate NIC driver
+using the ndo_start_xmit(). The driver then passes it to the Tx queue for 
+transmission.
+	The linux also uses a important data structure called sk_buff used
+to dynamically manage the packets.Linux also has some advanced ethernet 
+features inorder to increase network perfomance  

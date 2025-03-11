@@ -1,0 +1,4 @@
+When pinging from one pc to another, we need the IP address. If the ping fails the system
+may be down and also we need to check the IP address of the destination system.
+
+If needed configure the IP address statically

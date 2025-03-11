@@ -1,0 +1,14 @@
+To configure the static ip address for a pc , open its desktop and then 
+choose IP configuration
+
+Then enter the correct IP along with its correct subnet
+
+To check the IP address you can move to cmd then enter ipconfig
+
+And coming to modify the mac address , move to config menu and click
+FastEthernet0 and then enter the correct mac address
+
+To check the MAC address move to cmd , then enter ipconfig /all
+
+We can use ipconfig command to see the ip address of a system and can
+ping to it

@@ -1,0 +1,15 @@
+Connect two systems with a swtich and a router; don't forget to assign IP
+to the router and enable it
+
+once it is connected, use the ipconfig command to find the ip address of a
+pc 
+
+ping the other pc using the ping command and if the ping is success , then
+the system is up else it is down
+
+Similarly to check the connectivity and availability of the systems,
+we can also use traceroute command ; the command is tracert <ip addr>
+
+If there is any problem in the connectivity we can troubleshoot it by
+first checking whether the IP is correct or not and then followed by
+checking the connections

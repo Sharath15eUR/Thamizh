@@ -1,0 +1,7 @@
+Using wireshark i have captured the packets on my wifi adapter. Out of the
+captured packets , i have filtered them using a tcp filter with port 443
+as it is the port used by modern https
+
+I examined a packet and found out the source IP and destination IP in the IPV4
+field and also found the payload in the TCP port. I also found the ethertype 
+as IPV4 in the Ethernet II field
