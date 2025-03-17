@@ -1,0 +1,8 @@
+The voip phone and a swtich was included along with a pc in the network
+The switch has been configured with two vlans namely 10 and 20
+10 for data
+20 for voice
+
+The switch port mode has been set as access for 10 and for the voice
+it has been set as voice. Thus the traffic has been split separately
+for voice and data 

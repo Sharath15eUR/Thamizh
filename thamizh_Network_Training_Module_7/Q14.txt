@@ -1,0 +1,33 @@
+Static NAT:
+	In static NAT , a public address is assigned to a private IP
+address. here i have configured a pc with a switch and a router and finally
+a PC1 that acts as external n/w. the router is configured for both
+private IP and public IP as per its interfaces along with IP address
+for routing.
+
+The ip nat transaltion command is given by ,
+	#ip nat inside source static 192.1681.10 200.200.200.10
+When we ping the public addres 200.200.200.10, it will be convreted
+to the public IP by using the NAT and we will be getting the output
+
+Dynamic NAT:
+	The dynamic NAT assigns a public IP from its pool to the 
+public IP . it is also called as many to many mapping
+	We need to create a pool of ip address along with the subnet
+#ip nat pool PUB_POOL 200.200.200.10 200.200.200.20 netmask 255.255.0
+Then create a access-list to permit traffic from 192.168.1.0
+and then configure the ACL with the dynamic NAT. 
+Then ping from pc1 to pc0 and you will get the reply
+
+PAT:
+	Port address transaltion (Overloaded NAT) uses a single public IP
+to map with multiple private IPs . This is more common in router at home
+and office. It follows many to one IP mapping.
+
+	Enable the interfaces by creating public and private. Here also we 
+need a ACL to allow the IP address to access the NAT, and after that enable
+PAT by
+	#ip nat inside source list 1 interface GigabitEthernet0/1 overload
+After this, we can ping the pc0 from pc1
+
+To know the IP address change before and after NAT use show nat translations

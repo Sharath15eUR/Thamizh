@@ -1,0 +1,8 @@
+To implement inter VLAN-routing , we can use ROAS or layer 3 switch.
+
+Using layer 3 switch,
+	create two vlans in the switch and enable them with access port mode
+and create two interfaces for each vlan with ip address and subnet mask.
+
+Enter the switch vlan's IP address as corresponding vlan's PCs default 
+gateway and you should be able to ping the pcs
