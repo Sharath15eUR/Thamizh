@@ -1,0 +1,10 @@
+We need a switch and a PC to do the remote access of switch
+
+Create a vlan 99 (named management)  in the switch and assign ip address and subnet mask
+by selecting the vlan 99 as interface. Connect the PC to vlan 99 by configuring the 
+ethernet port to access mode. 
+then enable telnet in the swtich and set password before login
+
+Once done, open the PC and inside command prompt enter, 
+#telnet <ip of switch>
+and you will get the access of the switch

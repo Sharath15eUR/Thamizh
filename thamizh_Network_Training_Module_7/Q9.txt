@@ -1,0 +1,13 @@
+Troubleshooting steps for issues in VLAN:
+	1. Check the configured vlans in the switch by
+		#show vlan brief
+	2. Make sure all the vlans are available and they are assigned to
+the ports correctly.
+	3. make sure the trunk is also configured correctly on the 
+interface on which the router is connected to the switch
+		#show interfaces trunk
+	4. The router should be ROAS enabled. check for interfaces in the
+router
+		#show ip interafce brief
+	5. Verify the device IP and its default gateway
+Now ping and check the availability.

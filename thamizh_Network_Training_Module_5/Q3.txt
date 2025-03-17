@@ -1,0 +1,29 @@
+i am going to ping my phone from my laptop as they both are connected to the same wifi;
+The initial ip of my phone was 192.168.1.4
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_5$ ping -c 3 192.168.1.4
+PING 192.168.1.4 (192.168.1.4) 56(84) bytes of data.
+64 bytes from 192.168.1.4: icmp_seq=1 ttl=64 time=42.3 ms
+64 bytes from 192.168.1.4: icmp_seq=2 ttl=64 time=85.2 ms
+64 bytes from 192.168.1.4: icmp_seq=3 ttl=64 time=25.3 ms
+
+--- 192.168.1.4 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+rtt min/avg/max/mdev = 25.281/50.919/85.221/25.225 ms
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/n
+
+
+After i have statically changed the ip of my phone to 192.168.1.10
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_5$ ping -c 3 192.168.1.10
+PING 192.168.1.10 (192.168.1.10) 56(84) bytes of data.
+64 bytes from 192.168.1.10: icmp_seq=1 ttl=64 time=64.6 ms
+64 bytes from 192.168.1.10: icmp_seq=2 ttl=64 time=285 ms
+64 bytes from 192.168.1.10: icmp_seq=3 ttl=64 time=44.5 ms
+
+--- 192.168.1.10 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 44.513/131.420/285.173/109.027 ms
+
+
+Even after configuring the IP statically , i am able to ping the phone

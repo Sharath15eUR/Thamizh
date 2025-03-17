@@ -1,0 +1,12 @@
+In wireshark i have filtered only the ARP request packets.
+
+ARP - The Address Resolution Protocol is used to map the MAC address with the IP address;
+      If a destination IP address is not known , then it will broadcast a ARP request
+      asking for the MAC address of destination pc
+
+On Inspecting the ARP request packet, we can see the sender IP address and MAC address but the
+destination MAC address will not be known and so it is mentioned as 00:00:00:00:00:00; and
+also the type is IPV4
+
+On inspecting the ARP reply packet, we can see the destination MAC address, the type is
+also IPV4; this is the ARP reply packet on response to the request

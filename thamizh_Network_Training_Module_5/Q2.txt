@@ -1,0 +1,17 @@
+ARP - The address resolution protocol is used to map the IP address with the
+      MAC address and the rotuer also maintains a ARP table.
+
+ARP spoofing attack - in some cases hacker may send their own PC's MAC 
+	address instead of the original one as a reply for the broadcast.
+The sender will also assume it as the original mask and will store it in the
+ARP table. 
+
+To simulate this, we statically add a ARP entry for the already dynamically
+updated ARP entry for a particular IP address. The command is
+	#arp -s <ip address> <mac address>
+
+As we have manually added a fake arp entry, now pinging the system will
+route the traffic to hackers system instead of the original one.
+To avoid this we should enable the dynamic ARP and use encrypted protocols
+like HTTPS. However, as the PCs within the cisco packet tracer are limited, 
+we couldn't add a static ARP entry

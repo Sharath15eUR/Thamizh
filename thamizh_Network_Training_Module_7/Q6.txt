@@ -1,0 +1,8 @@
+When changing the native vlan on a trunk port for a single switch. The native vlan mismatch will
+occur and so it will raise error
+
+The command to set native vlan is : switchport trunk native vlan 50
+
+After setting different native VLANs , the ping fails and alsow we get the warning message
+showing the different native VLANs. we can rectify it using the same above command and
+the ping will work again

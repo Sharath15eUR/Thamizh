@@ -1,0 +1,10 @@
+The network features two internal PCs configured with private IPs and a NAT enabled router along with a server to depict Google.com
+One interface of the router has been enabled with private IP to communicate with the private PCs and another interface of the router
+is configured with public IP to communicate with the server. The NAT configurations have been made along with the access-lists.
+
+While configuring the NAT we should enable both the internal and external nat to ease the communication and we can see the change of ip address
+by using the NAT table which is available in the router. The type of NAT used here is PAT (Port address translation) which uses single public address
+for multiple private IPs by differentiating traffic using the port. So the NAT table stores the IP address along with the port and once it receives
+the response from the server, it again forwards it to the respective client.
+
+The change in ip address has also been attached as a screenshot

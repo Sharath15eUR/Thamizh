@@ -1,0 +1,18 @@
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_5$ sudo dhclient -r
+Killed old client process
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_5$ sudo dhclient
+Setting LLMNR support level "yes" for "2", but the global support level is "no".
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_
+
+
+I have released the already assigned IP address using the #sudo dhclient -r command and then
+again i asked for a new IP using the #sudo dhclient command;
+
+The DHCP request is divided into 4 ,(DORA process)
+
+DHCP Discovery - the client device sends a broadcast request asking for a IP
+DHCP Offer - The DHCP server will offer a IP that is freely available after looking into its
+		IP pool and sends it to the client
+DHCP Request - The client requests the DHCP server to assign the offered IP address
+DHCP Acknowledge - The DHCP server assigns the IP address to client by sending a 
+			acknowledgement

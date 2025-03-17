@@ -1,0 +1,22 @@
+The packets have been filtered using the wireshark and we can also 
+specify the filter by choosing the flags or ports etc..
+
+The packet DNS contains
+	Transaction ID
+	Flags - Response,op code, recursion dersired ...
+	Queries
+	Answers
+
+The TCP packet contains
+	Source/destination port
+	seq number
+	ack number
+	Flags - urgent , reserved,acknowledgement,push,reset,syn,fin
+	Window size
+	Options
+
+The UDP packet contains
+	source/destination port
+	Data
+	length
+	checksum and its status

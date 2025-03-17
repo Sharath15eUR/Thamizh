@@ -1,0 +1,12 @@
+Using wireshark, i captured the ARP packets; The two packets are
+ARP request and ARP reply
+
+On examining the ARP request packets, the source ip address and MAC address
+are available in the ARP header of the packet format but the target 
+destination MAC address is not known so it will be 00:00:00:00:00:00. We can 
+aslo see the ethernet type in the packet
+
+On examining the ARP reply packet, we can get the MAC address of the 
+destination PC. We can also see the OP code and frame length,
+
+The ARP request is a broadcast whereas the ARP reply is a unicast.

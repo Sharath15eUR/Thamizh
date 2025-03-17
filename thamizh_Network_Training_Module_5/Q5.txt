@@ -1,0 +1,49 @@
+Subnet - used to divide the network into smaller manageable domains,
+ 
+Given IP range  - 192.168.1.0/24 ; this belongs to class C
+so the subnet mask would be 255.255.255.0
+
+Task : to divide into 4 subnets
+
+4 = 2^2 ; so we need to borrow 2 bits from the host part. So the total 
+network bits is changed to 26.
+
+To find the new subnet mask 
+
+11111111.11111111.11111111.11000000
+  255   .  255  . 255     . 192 ---> The new subnet mask is 255.255.255.192
+
+Range for each subnet: 
+	(old hosts before borrowing)256-(new hosts after brorrow)192 = 64
+
+So the range for each subnet is 64 and in it 62 hosts are usable as the 
+first and last host are resereved for subnet id and broadcast
+
+Subnet name       subnet range 
+		(1st -last usable ip)           broadcast
+
+Subnet 1 =  192.168.1.1 - 192.168.1.62    192.168.1.63
+
+Subnet 2 =  192.168.1.65 - 192.168.1.126  192.168.1.127
+
+Subnet 3 = 192.168.1.129 - 192.168.1.190  192.168.1.191
+
+Subnet 4 = 192.168.1.193 - 192.168.1.254  192.168.1.255 
+
+
+Assigning IP to the PC's in cisco packet tracer
+
+	When I tried to connect four different PC's to the router directly,
+i got a error as the router had only two gigabitethernet ports. So i tried
+the ROAS configuration (Router on a stick) This allows multiple vlans
+to be connected the router using a single connection. 
+
+	I configured the switch by creating four vlans and then changed
+their switchport mode to access and then i configured the router connected
+interface of the switch mode to trunk
+
+	And then i configured the router by creating sub interfaces and 
+enabled each sub interface by using the encapsulation dot1Q command. And I
+enabled the interface state to UP and after that I pinged the systems
+and it worked
+

@@ -1,0 +1,23 @@
+A small network connection has been made including two pcs and two routers.
+The two PCs belong to different subnets
+
+Static Route: The static route is used to forward the packets to a particular destination
+in the absence of protocols like BGP/OSPF..
+
+The syntax is : ip route <destination-work> <subnet_mask> <next_hop_IP>
+
+We should configure the router in such a way that, the ip route is set to the next router
+Both the routers should be in the same network in order to transmit packets directly
+
+on Router 0 : ip route 192.168.3.0 255.255.255.0 192.168.2.2
+
+This command basically says that all the packets that are destinated to 192.168.3.0 will be 
+redirected to the next hop router of IP 192.168.2.2 ; then from that router it will be
+navigated to the corresponding PC.
+
+similary we should configure the router 1 in such a way that all the packets destined to 
+192.168.1.0 should be redirected to the next hop router of IP 192.168.2.1
+
+We can check the connectivity using ping and in order to see how the packet is being transmitted
+we can use traceroute command. The traceroute command shows the hops taken by the packets to reach
+the destination. The screenshots showing the traceroute output has been attached

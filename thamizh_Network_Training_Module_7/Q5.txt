@@ -1,0 +1,4 @@
+The two switches have been configured along with 4 Pcs where both pairs are connected to two different  switches. The switch-1 has vlan 10 , 20  
+and the switch-2 has vlan 30 and 40. The trunk port is enabled for both the switches and the router is also configured 
+for the different vlans along with the different sub interfaces.
+The ping different Vlan works

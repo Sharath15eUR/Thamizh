@@ -1,0 +1,18 @@
+The given IPs are ,
+
+10.1.1.1  - belongs to class A
+172.16.5.10  - belongs to class B 
+192.168.1.5  - belongs to class C
+
+And the default subnet mask for class A - 255.0.0.0
+				class B - 255.255.0.0
+				class C - 255.255.255.0
+
+Range of usable IPs
+
+First Usable Ip               Last usable IP
+10.0.0.1			10.255.255.254  (class A)
+
+172.16.0.1			172.16.255.254  (class B)
+
+192.168.1.1			192.168.1.254   (class C)

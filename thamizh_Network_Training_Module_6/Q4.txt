@@ -1,0 +1,38 @@
+192.168.10.5   this belongs to class C   Private IP
+172.20.15.1    this belongs to class B	 Private IP
+8.8.8.8        this belongs to class A   Public IP
+
+
+The private Ip ranges are ,
+10.0.0.0 - 10.255.255.255
+172.16.0.0 - 172.31.255.255
+192.168.0.0 - 192.168.255.255
+
+
+NAT handling of private IP when accessing internet:
+	NAT - network address transaltion is the technique used to allow multiple devices in a 
+private network to access the internet using a single public IP. It preserves the IPV4 addresses.
+
+When we make a request from our device, the private IP of our system is sent to the router(wifi)
+at home which in turn converts the private IP into public Ip (provided by the ISP) along with
+the ports using PAT (Port address translation). The router maintains a NAT table, which is used 
+to again send the response to the client device. 
+
+
+Types of NAT :
+	Static NAT :
+			One to one mapping
+			Maps a single pvt IP to a pub IP
+			Ex : used for hosting servers
+	Dynamic NAT:
+			Assign a public IP from a available Pool of IP addresses
+			Many to many mapping
+			
+	Overloaded NAT / PAT (Most common used in office and home router)
+			Multiple private IP share single public IP by differentiating traffic using port
+			Many to one mapping
+			Ex : all devices connected to home router use the same public IP provided the ISP
+
+When we search in google , the packet from our lap containing (source IP, source port and dest port and dest IP) will be forwarded to the router which performs NAT (PAT)  on the packet and so our source IP and source port will be changed
+
+Router has a NAT table ; The NAT table stores the IP addr along with the port

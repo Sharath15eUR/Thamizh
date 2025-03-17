@@ -1,0 +1,103 @@
+Traceroute - it is used to trace the path taken by the packet to reach the 
+	     server
+
+Ouput of traceroute: 
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_7$ traceroute google.com
+traceroute to google.com (142.250.182.110), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.1.1)  2.952 ms  2.871 ms  2.846 ms
+ 2  * * *
+ 3  202.88.152.73 (202.88.152.73)  5.048 ms  5.022 ms  4.097 ms
+ 4  10.241.1.6 (10.241.1.6)  5.809 ms  5.772 ms *
+ 5  10.240.254.140 (10.240.254.140)  4.245 ms  5.698 ms  5.675 ms
+ 6  * * *
+ 7  10.241.1.1 (10.241.1.1)  3.462 ms  3.329 ms  3.529 ms
+ 8  202.88.167.130 (202.88.167.130)  7.300 ms  7.283 ms  7.265 ms
+ 9  142.250.172.12 (142.250.172.12)  5.548 ms  5.820 ms  5.493 ms
+10  * * *
+11  142.251.55.120 (142.251.55.120)  4.832 ms 142.251.55.42 (142.251.55.42)  4.764 ms 142.250.228.244 (142.250.228.244)  5.683 ms
+12  142.251.55.241 (142.251.55.241)  2.773 ms 142.251.55.243 (142.251.55.243)  3.139 ms 142.251.50.58 (142.251.50.58)  3.114 ms
+13  maa05s21-in-f14.1e100.net (142.250.182.110)  3.023 ms 172.253.71.3 (172.253.71.3)  2.874 ms maa05s21-in-f14.1e100.net (142.250.182.110)  3.926 ms
+
+
+first column - hop number (Max 30 hops allowed by default)
+2nd   "      - IP address/DNS name
+3rd   "      - rtt for each hop and return of packets
+
+* means either packet loss or blocked by firewall and high RTT value means
+latency
+
+
+Options of traceroute :
+  -T  =used for sending TCP reqs
+  -q = limits the probe per hop
+  -m = limits the max hops
+  -n = prevents DNS resolution ,so faster response
+
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_7$ traceroute -m 10 google.com
+traceroute to google.com (142.250.182.110), 10 hops max, 60 byte packets
+ 1  _gateway (192.168.1.1)  26.881 ms  26.817 ms  26.792 ms
+ 2  * * *
+ 3  202.88.152.73 (202.88.152.73)  26.812 ms  26.789 ms  28.951 ms
+ 4  10.241.1.6 (10.241.1.6)  27.459 ms  28.239 ms  28.827 ms
+ 5  10.240.254.140 (10.240.254.140)  27.688 ms  27.724 ms  27.641 ms
+ 6  * * 10.240.254.1 (10.240.254.1)  3.512 ms
+ 7  10.241.1.1 (10.241.1.1)  2.932 ms  3.987 ms  3.965 ms
+ 8  202.88.167.130 (202.88.167.130)  4.983 ms  4.959 ms  4.936 ms
+ 9  142.250.172.12 (142.250.172.12)  6.691 ms  6.669 ms  6.648 ms
+10  * * *
+
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_7$ traceroute -n google.com
+traceroute to google.com (142.250.182.110), 30 hops max, 60 byte packets
+ 1  192.168.1.1  29.578 ms  29.527 ms  29.687 ms
+ 2  * * *
+ 3  202.88.152.73  29.431 ms  29.890 ms  32.118 ms
+ 4  10.241.1.6  32.280 ms  32.737 ms  31.835 ms
+ 5  10.240.254.140  29.800 ms  29.843 ms  30.704 ms
+ 6  10.240.254.1  33.334 ms  5.241 ms  5.194 ms
+ 7  10.241.1.1  3.864 ms  3.682 ms  3.661 ms
+ 8  202.88.167.130  4.993 ms  5.042 ms *
+ 9  142.250.172.12  5.414 ms  4.560 ms  6.146 ms
+10  * * *
+11  142.250.228.244  7.524 ms  7.488 ms 216.239.54.158  2.718 ms
+12  142.250.63.172  5.942 ms 142.251.55.241  3.808 ms 142.250.208.152  4.421 ms
+13  142.250.182.110  4.298 ms  3.620 ms  3.365 ms
+
+
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_7$ sudo traceroute -T google.com
+[sudo] password for thamizh: 
+traceroute to google.com (142.250.182.110), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.1.1)  3.827 ms  3.769 ms  3.728 ms
+ 2  * * *
+ 3  202.88.152.73 (202.88.152.73)  3.909 ms  3.895 ms  7.053 ms
+ 4  10.241.1.6 (10.241.1.6)  6.739 ms * *
+ 5  10.240.254.50 (10.240.254.50)  4.093 ms  6.928 ms  5.850 ms
+ 6  * 10.240.254.1 (10.240.254.1)  4.555 ms *
+ 7  10.241.1.1 (10.241.1.1)  4.695 ms  4.667 ms  4.638 ms
+ 8  * 202.88.167.130 (202.88.167.130)  47.870 ms *
+ 9  142.250.172.12 (142.250.172.12)  6.779 ms  6.752 ms  4.664 ms
+10  142.251.227.213 (142.251.227.213)  4.482 ms 142.251.227.211 (142.251.227.211)  7.176 ms 142.251.227.213 (142.251.227.213)  4.435 ms
+11  142.251.55.243 (142.251.55.243)  4.166 ms 142.251.55.241 (142.251.55.241)  3.948 ms 142.251.55.243 (142.251.55.243)  3.845 ms
+12  maa05s21-in-f14.1e100.net (142.250.182.110)  3.785 ms  4.221 ms  4.239 ms
+
+
+
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_Network_Training_Module_7$ traceroute -q 2 google.com
+traceroute to google.com (142.250.182.110), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.1.1)  7.412 ms  7.335 ms
+ 2  * *
+ 3  202.88.152.73 (202.88.152.73)  7.588 ms  7.558 ms
+ 4  10.241.1.6 (10.241.1.6)  8.400 ms  8.404 ms
+ 5  10.240.254.140 (10.240.254.140)  7.314 ms  7.398 ms
+ 6  10.240.254.1 (10.240.254.1)  9.823 ms  9.706 ms
+ 7  10.241.1.1 (10.241.1.1)  7.907 ms  7.880 ms
+ 8  * *
+ 9  142.250.172.12 (142.250.172.12)  5.657 ms  5.604 ms
+10  * *
+11  108.170.231.130 (108.170.231.130)  5.501 ms 216.239.54.196 (216.239.54.196)  6.011 ms
+12  142.250.63.172 (142.250.63.172)  5.462 ms 142.250.239.56 (142.250.239.56)  4.418 ms
+13  maa05s21-in-f14.1e100.net (142.250.182.110)  4.604 ms  5.595 ms
