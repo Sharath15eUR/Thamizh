@@ -1,0 +1,17 @@
+To create a standard access-list it should be within 100,
+and we can imply rules for a specific source IP range.
+
+Consider the same setup as for Q11, two different subnet PCs connected to
+router. I created the access-list 5 and allowed traffic from only the
+IP range of 192.168.1.0 0.0.0.255 and denied all other and set it
+to interface GigabitEthernet0/0/0 and setbound to IN.
+
+When I pinged the pc1 from pc0 , the ping worked and the acl allow 
+match was increased. So the standard ACL works
+#Router(config)#access-list 5 permit 192.168.1.0 0.0.0.255
+#Router(config)#access-list 5 deny any 
+
+Router#show access-list 5
+Standard IP access list 5
+    permit 192.168.1.0 0.0.0.255 (4 match(es))
+    deny any

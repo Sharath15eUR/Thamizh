@@ -1,0 +1,20 @@
+Creating a extended ACl , requires it to be numbered between 100 and 199,
+Using the same setup as Q11, i created a ACL 102 blocking the ftp and http 
+port, and assigned it to interface GigabitEthernet0/0/0 and set the bound
+to in. 
+
+try making ftp and http requests from pc0 to pc1 , both will be blocked 
+because of the ACL.
+
+After checking the ACL matches, the match for both HTTP and FTP has been
+increased meaning they are blocked by the ACL
+
+Router(config)#access-list 102 deny tcp 192.168.1.10 0.0.0.0 192.168.2.10 0.0.0.0 eq 80
+Router(config)#access-list 102 deny tcp 192.168.1.10 0.0.0.0 192.168.2.10 0.0.0.0 eq ftp
+Router(config)#access-list 102 permit ip any any
+
+Router#show access-lists 102
+Extended IP access list 102
+    deny tcp host 192.168.1.10 host 192.168.2.10 eq www (12 match(es))
+    deny tcp host 192.168.1.10 host 192.168.2.10 eq ftp (12 match(es))
+    permit ip any any

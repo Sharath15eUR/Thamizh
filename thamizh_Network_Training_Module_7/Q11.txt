@@ -1,0 +1,21 @@
+ACL- Access control list is used to restrict the incoming and outgoing
+traffic in switches and routers. The access list within 100 , means
+it will implement rules only with the source IP and the ACL from 100 to 199
+will implement rules with source IP , dest IP and source port and dest port
+
+In the config, i created a two PCs, each belonging to different subnet, and
+they were conencted to a router and then i enabled the interfaces of the
+router and assigned them default gateway as per the corresponding system.
+
+Then i created the ACL list 101 and blocked the http request from pc1 to pc2,
+
+I checked this by opening browser and entering http://192.168.2.10, but it 
+responded with request timed out and also the deny rule in ACL hit count
+was increases, so ACL blocked the traffic
+
+Router(config)# access-list 101 deny tcp host 192.168.1.10 host 192.168.2.10 eq 80
+Router(config)# access-list 101 permit ip any any
+Router(config)# interface GigabitEthernet0/0
+Router(config-if)# ip access-group 101 in
+Router(config-if)# exit
+
