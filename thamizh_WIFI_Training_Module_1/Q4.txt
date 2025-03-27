@@ -1,0 +1,25 @@
+WiFi Acesspoint :
+	It is a networking device that acts as a bridge between wired and
+wireless devices, allowing devices to connect to a wired network.
+
+	There are two types of APs
+	integrated AP - found in home wifi router, it consists of router,
+switch and AP
+	standalone AP - used in companies where multiple APs are used, and
+connected via a wired ethernet
+
+Functionalities of AP:
+	1. It uses radio waves to communicate with devices
+	2. It can opearte in 2.4Ghz and 5Ghz
+	3. It converts the wired Ethernet singnal into wireless signals
+	4. Implements security protocols like hiding the SSID
+	5. Allows multiple devices to be connected to it using protocols like
+MIMO(Multiplwe input multiple output- uses multiple antennas at receiver and
+transmitter side to enhance data speed)
+	6. Acts as a bridge between wired and wireless devices to access the 
+wired network. 
+	7. If DHCP is found in the AP it can assign IP addresses else it will
+forward it to the main router or DHCP server
+	8. A WLAN controller is used to control multiple APs in ESS network
+	9. The most important function of a AP is load balancing i.e. to 
+distribute the devices across multiple APs

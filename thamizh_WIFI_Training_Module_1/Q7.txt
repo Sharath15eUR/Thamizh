@@ -1,0 +1,37 @@
+I am using my mobile hotspot as a AP to configure it to 2.4Ghz and 5Ghz,
+
+2.4 Ghz:
+	
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_WIFI_Training_Module_1$ iwconfig
+lo        no wireless extensions.
+
+wlp1s0    IEEE 802.11  ESSID:"Thamizh"  
+          Mode:Managed  Frequency:2.437 GHz  Access Point: 66:CA:F0:EE:68:E4   
+          Bit Rate=172 Mb/s   Tx-Power=3 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:on
+          Link Quality=70/70  Signal level=-28 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+
+5Ghz:
+	
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop/networking_office/thamizh_WIFI_Training_Module_1$ iwconfig
+lo        no wireless extensions.
+
+wlp1s0    IEEE 802.11  ESSID:"Thamizh"  
+          Mode:Managed  Frequency:5.18 GHz  Access Point: 66:CA:F0:EE:68:E4   
+          Bit Rate=1.0806 Gb/s   Tx-Power=3 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:on
+          Link Quality=70/70  Signal level=-31 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+
+
+from these two command outputs, you can see the difference in frequencies
+of 2.4Ghz and 5Ghz . 
+The 2.4Ghz offers a speed of 172Mb/s, and the link quality is also full,
+indicating the strength of the wifi signal
+The 5Ghz offers a speed of 1.0806 Gb/s showing that wifi 5 offers more
+speed that 2.4Ghz

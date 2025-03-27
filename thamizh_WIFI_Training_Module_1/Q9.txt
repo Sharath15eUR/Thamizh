@@ -1,0 +1,15 @@
+Wifi Backhaul :
+	it is a network link that is used to connect the APs or routers to
+the main internet source. There are multiple types,
+
+Fiber backhaul - uses fiber cable to connect APs - very high speed & low latency
+Ethernet backhaul - uses ethernet cable to connect APs - high speed & low latency
+Wireless backhaul - uses wireless links to connect APs - low speed & high latency
+Cellualar backhaul - uses cellular network to provide internet - Speed and latency vary as per location
+Satellite backhaul - uses satellite signals to provide internet - low speed & high latency
+Microwave backhaul - uses microwave radio signals to provide internet - medium speed and low latency
+
+
+After identifying the speed of my wifi and also the connection type of WAN , the
+backhaul of my wifi is primarily Fiber and so it uses fiber cable and has high speed
+and low latency (the ookla speed test showed only 4ms of latency)

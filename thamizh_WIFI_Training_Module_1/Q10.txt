@@ -1,0 +1,25 @@
+Types of Wifi topologies:
+	1. Basic Service Set (BSS) - contains one AP and all other devices are connected
+to it. Limited coverage and can communicate only within the network
+	2. Extended Service Set (ESS) - combines multiple APs via a wired ethernet n/w. The
+APs are controlled using a WLAN controller.Can communicate between different networks and 
+offers wider area of coverage. Mutliple APs share the same SSID but each AP has different
+BSSID
+	3. Ad Hoc Mode - also called as Indenpendent Basic service Set (IBSS). No AP, instead
+the devices are connected directly to reach other as each device acts as both transmitter and
+receiver. No need of router or any other infrastructure for the connection. It is a 
+temporary connection. Ex: to share files between two laptops without using internet. Uses 
+802.11 Adhoc Mode
+	4. Mesh Wifi network - consists of multiple interconnected APs to extend coverage.
+It intelligently routes the traffic. Useful in large homes are offices; they use same SSID 
+and same network
+	5. Wifi Bridge mode - it is used to connect two different wired or wireless networks
+All the devices connected to a bridge falls under the same network. Used to connect two LANs
+wirelessly.
+	6. Wifi Repeater mode - it is used to enhance the signal strength. It receives the 
+signal , amplifies it and retransmits it. Mainly used to increase the quality of Wifi
+	7.Wifi Direct - No need of wifi setup to transfer data, instead a device acts as a 
+small AP and manages conenctions with client; Mainly used for secure file transfer 
+(quick share) and wifi print
+	8. Hotspot -It's a wireless AP and it provides internet access to the connected devices
+ like router, mobilephones

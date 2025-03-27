@@ -1,0 +1,21 @@
+I use a wifi router in my home and i have laptop connected to it so  i checked its 
+configuration by using the iwconfig command
+iwconfig = shows details about the wireless networks connected to our system
+
+thamizh@thamizh-HP-Pavilion-Laptop-15-eg2xxx:~/Desktop$ iwconfig
+lo        no wireless extensions.
+
+wlp1s0    IEEE 802.11  ESSID:"MKTB"  
+          Mode:Managed  Frequency:5.765 GHz  Access Point: 44:95:3B:74:B6:91   
+          Bit Rate=87.8 Mb/s   Tx-Power=3 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:on
+          Link Quality=66/70  Signal level=-44 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:6   Missed beacon:0
+
+From these, 
+	we can see that the Mode is "managed", which means my router acts a client (meaning that 
+it's connected to a AP). The freq is 5Ghz and the mac address of my router is given as AP
+
+	The bit rate is 87.8 Mb/s , so my wifi falls under the category of wifi 5 (802.11ac) 

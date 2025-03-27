@@ -1,0 +1,13 @@
+Bridge Mode:
+	The bridge mode is used to connect to two wired or wireless
+networks. All the devices in the bridge fall under the same network. 
+This is useful when we want to conenct two LANs wirelessly. The bridge
+will communicate with the main router. So it alows devices on different
+networks to communicate by passing traffic between them
+
+Repeater mode:
+	The repeater mode is used to enhance the singal coverage of the
+exisiting wifi. It receives the signal amplifies it and retransmits it.
+Consider we have the wifi router at ground floor and the signal strength
+is low at first floor, then we can use a repeater at first floor to enhance
+the signal strength without using any wired cables.

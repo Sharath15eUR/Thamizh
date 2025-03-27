@@ -1,0 +1,19 @@
+802.11b:
+	1. First discovered standard of Wifi
+	2. Operates in 2.4Ghz
+	3. Supports longer range but slower rate of data transmission
+	4. max speed was around 11Mbps
+	5. Better penetration through walls
+	6. highly susceptible to interference due to bluetooth and microwaves
+
+802.11a:
+	1. Discovered after 802.11b,
+	2. Operates in 5Ghz
+	3. Has less interference as limited no. of devices in 5Ghz
+	4. Supports high tranmission speed
+	5. Shorter range
+	6. Low penetration through walls
+	7. max speed was arounf 54Mbps
+
+The current wifi vesions 802.11ac (wifi 5) and 802.11ax(wifi 6)
+ combines futures of both and provide good speed with good coverage

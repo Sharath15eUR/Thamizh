@@ -1,0 +1,13 @@
+IEEE: 
+	1. Institue of Electrical and Electronice Engineers
+	2. They create the networking protocols and standards
+	3. They create a technical standard that should be followed 
+by all others more of like a guide template
+	4. They mostly work on R&D part for creating new standards
+	ex: they create standards like 802.11ac and 802.11ax
+WFA
+	1. Wi-Fi Alliance
+	2. It is used to test the WiFi devices for consumer adoption
+	3. Its main job is to test the devices and certify them
+	4. A device can be marked as Wi-Fi only after they certify them
+	ex: they should certify a device as compatible with Wifi 6 or Wifi 5

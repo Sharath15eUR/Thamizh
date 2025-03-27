@@ -1,0 +1,10 @@
+Wifi operates at both Physical (Layer 1) and Data link layer (Layer 2)
+
+Physical :
+	The wifi uses radiowaves to send the data and also uses modulation techniques 
+	along with defining the bandwidth and frequencies
+	
+Data link layer :
+	The wifi needs to forwards the data packet between the devices connected across the 
+	network and for that it uses the MAC sublayer including the process of 
+	data forwarding and addressing

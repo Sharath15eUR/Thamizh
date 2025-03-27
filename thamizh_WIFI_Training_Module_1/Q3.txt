@@ -1,0 +1,24 @@
+BSS and ESS
+
+BSS :
+	Basic Service Set. It's the smallest network of a wifi where there
+will be only one AP and all other client devices will connected to this AP.
+And the communication can happen only within this network. It is identified
+by it BSSID (Basic Service Set Identifier). It's range is limited to a single
+APs range.
+	
+	Ex: Home routers, where our laptops and mobile phones are connected
+to the single wifi router.
+
+
+ESS:
+	Extended Service Set. It combines multiple BSS under a single
+network. Communication can happen between the networks. There can be mutiple
+APs and all the APs are connected via a  wired Ethernet. Devices can roam
+between different networks without losing the data connection and this is
+possible as multiple APs share the same SSID, but each AP has a different
+BSSID(MAC address). It offers wider area of coverage.
+
+	Ex: Wifi in large areas such as college campus or office networks. 
+As we move through the campus, we can identify the BSSID changing which 
+means we are in a ESS network of WiFi.
