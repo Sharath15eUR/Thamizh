@@ -1,0 +1,18 @@
+LightWeight AP:
+	It requires a local WLC to manage multiple APs
+	CAPWAP tunnels are used to transfer data between AP and WLC
+	Need to add redundant WLC to manage failure
+	Scalability is limited as adding a new APs require large WLC
+	Managed on-site
+	Used in large enterprises
+	Security is managed by WLC
+
+Cloud Based AP:
+	It doesn't need a WLC , instead they are managed by a centralized 
+dashboard
+	Data transfer occurs between AP and the internet.
+	Data is already distributed and so highly available
+	Highly scalable
+	Managed remotely
+	Used in distributed locations such as branch Offices
+	Security is managed by adding firewalls and cloud policies	

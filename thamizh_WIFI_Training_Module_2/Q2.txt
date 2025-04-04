@@ -1,0 +1,24 @@
+CAPWAP :
+	Control And Provisioning of Wireless Access Points
+	It is a networking protocol used to manage the APs. It enables
+communication between AP and WLC.
+	It supports split MAC architecture and encryption of data.
+	The CAPWAP protocol has two types of packets :
+		Control Packets - management data
+		Data packets - User data
+	The connection between WLC and AP:
+		1. AP sends a CAPWAP discovery request (either broadcast
+ or DNS resolution or by statically adding the IP of WLC) to WLC
+		2. The WLC responds with a discovery response 
+		3. The AP will choose a WLC and send the CAPWAP join request
+		4. The WLC verify the AP and responds with CAPWAP join response
+
+	WLC manages the APs so if a AP is outdated it sends the firmware update
+	It also sends the config details like SSID, security settings
+	
+CAPWAP Modes:
+	1. Local mode : AP forwards all traffic to WLC
+	2. FlexConnect mode : When WLC is unreachable , AP switches traffic
+locally
+	3. Monitor mode : AP only scans for unauthorized devices and interference
+	

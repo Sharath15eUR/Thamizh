@@ -1,0 +1,10 @@
+Split MAC architecture :
+	It is a network architecture , where the MAC layer functions are divided into two AP and the WLC 
+(Wireless Controller)
+	Instead of AP handling all the functions (which reduces the efficiency of AP), it is being distributed
+between AP and WLC.
+	The AP focusses on real-time data such as frame transmission and encryption whereas the WLC 
+focusses on authentication and mobility(hand-offs). 
+	By implementing this architecture, the load on AP is reduced , so it mainly focusses on wifi traffic.
+	The WLC manages the client devices roaming and the hand-offs. This method is useful in large
+	enterprises. All the SSID configuration , security policies are handled by the WLC.

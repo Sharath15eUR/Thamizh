@@ -1,0 +1,16 @@
+CAPWAP in OSI model :
+	The CAPWAP protocol fits in the 3rd layer (Network layer) of the 
+OSI model, as it mainly transports data packets between AP and WLC.
+	Two tunnels:
+		Control tunnel
+		Data tunnel
+Control tunnel :
+	It is used to transport the management and contro data between
+the AP and WLC such as the WLC joining the AP process. 
+It also sends firmware updates to the AP. The UDP port is 5246. 
+Encapuslation is done using the DTLS (Datagram transport layer security)
+
+Data tunnel :
+	The data tunnel is used to transport client data between AP and WLC.
+It also transports the QoS tagged traffic for priority. The UDP port is 
+5247. Here encryption is optional but uses CAPWAP headers.

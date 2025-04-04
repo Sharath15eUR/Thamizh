@@ -1,0 +1,19 @@
+Sniffer Mode :
+	It is a feature in AP, that enables it to capture the WiFi traffic on a
+specific channel and sends it to a packet analyzer. Mainly it used in 
+enterprises for WiFi troubleshooting, perfomance analysis and network auditing
+	The AP acts as a packet capturer and listens to a specific WiFi channel
+and then forwards it to a central analysis tool.
+	Ex: When a company want to check the latency in their office, 
+the IT team will configure a AP to the Sniffer mode and then analyse them using
+Wireshark or some other analysis tool.
+	
+Monitor Mode :
+	The WiFi network adapter in the client device works in monitor mode by 
+capturing all the WiFi traffic in a particular channel. It will capture 
+all the packets which are not intended for it also. The device need not to be
+connected to a AP. It can capture broadcast packets also. These packets are
+then analysed using wireshark or some other analysis tool.It is mainly used
+in penetration testing and to detect Rouge APs.
+	Ex: When a company need to check the vulnerability of their
+WiFi , then they can use this monitor mode in a client device 

@@ -1,0 +1,24 @@
+The CAPWAP tunnel is maintained between AP and the WLC using regular 
+communication. The CAPWAP tunnel is established by,
+	1. The AP finds the WLC using DHCP or DNS
+	2. AP and WLC exchange CAPWAP packets
+	3. if encryption is enabled, the AP and WLC establish a secure 
+connection.
+	4. The two CAPWAP tunnels (control and Data) are created.
+
+The CAPWAP tunnel is maintained by sending regular updates
+	
+	1. keep alive messages- The AP sends keep alive messages periodically
+to the WLC. If the WLC does not respond , the AP will retransmit the signal
+up to a certain period of time and after that it will mark the connection
+as closed.
+	2. Control messages - The AP sends its configuration updates, status
+reports and monitoring data to the WLC. If any change occurs, it will update
+dynamically.
+	3. DTLS : The AP and the WLC periodically refreshes the key to avoid
+hacking attacks
+	4.Retransmission : If an AP does not receive ack from the WLC, it
+ tries retransmitting the packets and if the conenction is lost , it again
+ attempts to connect by using the CAPWAP discovery.
+ 	5. In case of failure of WLC it switches to the backup WLC.
+

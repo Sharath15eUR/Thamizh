@@ -1,0 +1,16 @@
+When a WLC goes down in a locally connected mode of AP, 
+	1. The existing connected devices will be disconnected from the AP, as
+all the authentication and encrytption are handled by the WLC.
+	2. New devices also cannot be conncted to the AP , as authentication
+requires WLC.
+	3. The AP will try to reconnect to the the WLC, and once it is 
+restored the AP will again connect to the WLC.
+	4. If the WLC goes the down, the ongoing communication between the 
+AP and the connected devices will be interrupted as the communication 
+happens via the CAPWAP tunnel.
+
+	To avoid these , we can connect the AP in flexConnect method, where
+the AP will switch to standalone mode if the WLC goes down and enables 
+communication within the network thus maintaining the existing devices. We can
+also set up a backup WLC to which the AP can be connected if the primary
+WLC goes down.

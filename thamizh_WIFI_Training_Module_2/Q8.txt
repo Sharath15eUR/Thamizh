@@ -1,0 +1,21 @@
+
+Autonomous AP: They work without WLC and each AP should be configured , maintained
+and optimized separately.
+
+If we deploy more than 50 autonomous APs, then we will face the following
+issues,
+	1. Autonomous APs doesn't support roaming and hand-offs, so there
+are high chance of user getting disconnected from the network.
+	2. All the APs should configured separately for security, so if even
+a single AP was left unconfigured , it will provide access to rogue devices
+	3. It is difficult to configure such large number of APs separately
+	4. Lacks a centralized dashboard, from where we can configure and 
+monitor multiple APs
+	5. Autonomous APs doesn't support dynamic load balancing, so 
+some APs may get overloaded.
+	6. Increased maintanenance and costs as all the devices are handled
+separately.
+	7. As there is no centralized dashboard, there are high chances that
+APs may be deployed with overlapping channels which causes interference and
+degrades perfomance.
+	
