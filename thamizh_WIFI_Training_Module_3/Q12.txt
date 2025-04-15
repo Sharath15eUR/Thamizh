@@ -1,0 +1,8 @@
+The data rate is the maximum theoretical transmission speed at the physical
+layer between an device and a AP.
+
+Data rate = (no.of data subcarriers)*(number of coded bits per subcarrier per
+stream)* (Coding rate)* (no. of spatial streams) / (OFDM symbol duration)+(
+guard interval duration)
+
+spatial stream -  1 to 8 in MIMO

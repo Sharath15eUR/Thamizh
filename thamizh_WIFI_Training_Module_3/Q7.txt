@@ -1,0 +1,25 @@
+PHY layer :
+	This is the lowest layer in the Wi-Fi stack. This is responsible for
+radiating the data into air. It is also called as PPDU - Physical Protocol
+Data Unit.
+
+The components of a PHY layer differs based on the generation but the 
+general components are,
+
+1. Preamble:
+	Used by the receiver to detect and synchronize the incoming signal
+	Subfields (802.11a/g/n):
+		STF- Short Training field - detect signal timing
+		LTF - long  ""        ""  - channel estimation
+		Signal field - modulation,coding info
+
+2. Header:
+	Carries info about the modulation and coding scheme of frame
+	Includes data rate,length of payload,modulation type, coding rate,
+GI info.
+
+3. Payload (MPDU-MAC protocol data unit)
+	it contains the actual data from MAC layer
+	it includes application data, tcp/udp data, MAC headers
+
+

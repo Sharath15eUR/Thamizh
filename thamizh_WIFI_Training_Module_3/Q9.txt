@@ -1,0 +1,15 @@
+MIMO :
+	Multiple input and multiple output
+	It uses multiple antennas at both transmitter and receiver
+	So it transmits multiple data streams to a single device at once.
+	Enhances data transfer speed,throughput
+	used in 802.11n,ac,ax
+	it supports downlink only
+
+MU-MIMO:
+	Multi user MIMO
+	It is also similar to MIMO but it sends data to multiple devices 
+at the same time.
+	Wifi 5 supports only downlink and wifi 6 supports both uplink and
+downlink
+	Optimized for many device environments

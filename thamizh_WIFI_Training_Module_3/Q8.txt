@@ -1,0 +1,16 @@
+OFDM :
+	Orthogonal Frequency Division Multiplexing
+	It divides the channel into sub carriers which allows transmission of
+parts of data simultaneously.
+	Only one device is given access to all the sub carriers for a period of 
+time
+	Each subcarrier carries a part of data in parallel,increasing
+efficiency
+
+OFDMA:
+	Orthogonoal Frequency Division Multiple Access
+	It also similar to OFDM divides the channel into sub carriers
+	It allows multiple users to send data through the sub carriers at the
+same time by allocating a group of subcarriers to each user.
+	It supports simultaneous uplink/downlink transmission for many
+users and has low latency

@@ -1,0 +1,22 @@
+OFDM :
+	Orthogonal Frequency Division Multiplexing
+	
+	This technique has been used in the wifi standards of Wi-Fi 4 to 
+Wi-Fi 7 , includin g 802.11a,g,ac,ax,n.
+	
+	The older methods such as DSSS occupy the entire channel for a
+single message, so there was high chance of intereference, and it was 
+not efficient in noisy environments. So the concept of OFDM was introduced
+
+OFDM concept:
+	Basically the OFDM divides the available spectrum into many
+narrow subcarriers. These subcarriers are orthogonal (mathematically
+independent), so there will be no interference between them.And using this
+subcarriers we can send parts of the data simultaneously. These sub carriers
+are individually modulated with QPSk,BPSK,QAM etc..
+
+Benefits of OFDM:
+	High data transfer rate
+	Efficient use of bandwidth
+	Supports multiple users
+	More stable in noisy environments

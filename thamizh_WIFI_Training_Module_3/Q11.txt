@@ -1,0 +1,49 @@
+Types of PPDU:
+
+802.11a/g   legacy OFDM
+
+802.11b		DSSS
+
+802.11n		High throughput
+
+802.11ac	very high throughput
+
+802.11ax	high efficiency
+
+802.11be  	Extremely high throughput
+
+
+1. Legacy PPDU:
+
+	short training field
+	long training field
+	Signal field
+	Data field
+
+2. HT PPDU
+	Legacy short/long training fields
+	legacy signal field
+	HT-STF
+	HT-LTF
+	HT-SIH
+	Data field
+
+3. VHT PPDU
+	L(legacy)-STF
+	L-HTF
+	L-SIG-A
+	VHT-SIG
+	VHT-LTF
+	VHT-STF
+	VHT-SIG-B
+	Data
+
+4. HE PPDU
+	L-STF
+	L-LTF
+	L-SIG
+	HE-SIG-A
+	HE-STF
+	HE-LTF
+	HE-SIG-B
+	Data

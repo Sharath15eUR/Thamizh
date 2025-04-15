@@ -1,0 +1,41 @@
+Modulation:
+	It is the process of encoding digital data into radio waves.It
+happens at the PHY level and also it is done by modifying the carrier wave
+properties like amplitude, phase and frequency
+
+Modulation types:
+
+BPSK	Binary phase shift keying	1 bit/symbol	Low speed
+
+QPSK	Quadrature PSK			2 bits/sym	Medium
+
+16-QAM	16 level Quadrature amplitude	4 bits/sym	Faster 
+	modification	
+
+64-QAM	64 levels 			6 bits/sym	Fast
+
+256-QAM	256 level 			8 bits/sym	very fast
+
+1024-QAM  1024 levels			10 bits/sym	Ultra fast
+
+4096-QAM  4096 levels			12 bits/sym	Super fast
+
+QAM :
+	So QAM basically works by combining phase and amplitude moudlation.
+So consider 64-QAM , each unique combination of amplitude and phase represents
+6 bit pattern . So the higher levels of QAM has more bits/symbol and so the
+higher data transfer speed. Higher  QAM needs better signal quality so if we
+are away from the router , device automatically downgrades to BPSK or QPSK to
+maintain connectivity.
+
+--------------
+
+Wifi standards 			Modulations
+
+802.11				FHSS 			2Mbps
+802.11a/g			OFDM with 64 QAM	54Mbps
+802.11b				DSSS with QPSK		11Mbps
+802.11n				64-QAM			600 Mbps
+802.11ac			256-QAM			3.5Gbps
+802.11ax			1024-QAM		9.6Gbps
+802.11be			4096-QAM		30 Gbps			

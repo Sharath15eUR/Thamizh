@@ -1,0 +1,18 @@
+DSSS:
+	- Direct sequence spread spectrum
+	- It spreads the data over the entire channel frequency by multiplying
+it with a pseudo random noise code.
+	- Each bit of the data is replaced by a sequence of bits (chips)
+	- So it becomes difficult for the hacker to interfere or decode
+the signals
+	- used in 802.11b wifi standard
+
+FHSS
+	- Frequency Hopping spread spectrum
+	- It rapidly switches the carrier frequency during transmission
+based on a predefined pseudorandom sequence
+	- The sequence is known to both the sender and the receiver
+	- Provides basic security
+	- Its more like talking on a walkie talkie while constantly changing
+channels over sync
+	- used in 802.11 wifi standard

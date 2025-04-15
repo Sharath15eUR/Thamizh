@@ -1,0 +1,29 @@
+PPDU:
+	Physical Protocol Data unit
+	it represents the entire PHY frame
+	it contains preamble (for synchronization), header (modulation info),
+and PSDU (PLCP service data unit).
+	it wraps data from MAC layer with necessary headers and preambles
+so that receiving device can correctly detect and decode it.
+
+PLCP:
+	It is the first layer in PHY , and it acts as a bridge between
+MAC layer and the PDU sublayer
+	it prepares the data for modulation and transmission
+	Converts the MAC layer format into a format that PHY layer can transmit
+
+
+PMD:
+	Physical medium dependent , it is the lowest layer in PHY 
+and it is responsible transmitting the data into air and for its reception
+	it is responsible for the modulation/demodulation
+
+so the flow is like,
+
+MAC layer
+    |
+PLCP (add headers & preamble)
+    |
+PPDU (frame formed and passed to PMD)
+    |
+PMD (transmission and reception of RF)

@@ -1,0 +1,21 @@
+Guard interval:
+	It is the short period of time delay inserted between the data symbols
+during transmission. 
+	When we transmit data in real time, there is a chance of multipath
+propogation i.e. due to bouncing off walls and some other refraction etc..
+there are more chances that a part of the symbol may arrive delayed at the 
+receiver at the same time where a new symbol might also arrive. This is 
+called the Inter-symbol interference problem. The receiver might confuse 
+with the symbols. 
+	
+	So to avoid this , we use Guard interval ; there are
+		Short guard interval - 400 ns
+		Long guard interval - 800ns.
+
+Long guard interval is more common and more reliable as it has more time before
+one symbol completely ends, whereas the short guard interval is more efficient
+and does not waste the time but it is being implemented in new devices from 
+802.11n.
+
+Because of the shorter GI , more symbols can be transmitted and high throughput
+is achieved

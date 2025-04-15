@@ -1,0 +1,48 @@
+The different standards of IEEE 802.11 PHY layer and their characteristics are,
+
+1.802.11
+	-freq : 2.4Ghz
+	-max data rate : 2 Mbps
+	-modulation : FHSS,DSSS,infrared
+	-it was the first standard and now its not used
+
+2. 802.11a
+	-freq:5Ghz
+	-max data rate : 54Mbps
+	-Modulation : OFDM
+	-Channel Width : 20 MHz
+	-High speed and less interference due to higher frequency
+
+3. 802.11b
+	-freq: 2.4 Ghz
+	-max data rate : 11 Mbps
+	-modulation : DSSS
+	-channel width : 22 MHz
+	-Better range than 802.11a but slower and susceptible to interference due to low freq.
+
+4. 802.11g
+	-freq: 2.4Ghz
+	-max data rate: 54 Mbps
+	-modulation:OFDM(also supports DSSS)
+	-channel width:20 MHz
+	-also compatible with 802.11b and high throughput
+
+5. 802.11n  - wifi 4
+	-freq: 2.4 & 5Ghz (dual band)
+	-max data rate:600Mbps
+	-modulation:OFDM
+	-Channel width: 20/40 MHz
+	-Supports MIMO
+
+6. 802.11ac  - wifi 5
+	-freq: 5Ghz only
+	-max data rate: 6.9Gbps
+	-modulation:OFDM (256 QAM)
+	-channel width: 20/40/80/160 Mhz
+	- supports MIMO in downlink
+7. 802.11ax - wifi 6/6E
+	-freq: 2.4Ghz,5Ghz, 6Ghz
+	-max data rate: 9.6Gbps
+	-modulation : OFDM (1024 QAM)
+	-channel width : upto 160 Mhz
+	-Supports MU-MIMO(both uplink and downlink)

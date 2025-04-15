@@ -1,0 +1,32 @@
+The Wi-Fi frequency bands are divided into mainly 3 bands,
+	2.4 Ghz
+	5 Ghz
+	6 Ghz
+
+
+2.4 Ghz:
+	- It is used in 802.11 b/g/n/ax
+	- It has longer range
+	- Penetrates wall better
+	- More interference as bluetooth and microwave also use this
+	- It has 14 channels and the channel width is 20MHz
+	- Out of the 14, 1 6 11 channels can be used without intereference,
+as they are the non overlapping channels
+
+5 Ghz:
+	- It is used in 802.11 a/ac/ax/n
+	- It has faster speed but less range
+	- Less intereference
+	- The channel width is 20/40/60/80/160 MHz and it has channels 
+ranging from 36 to 135
+	- It can combine multiple 20 MHz channels to create wider 
+channel upto 160 MHz
+	- It also uses DFS when needed
+
+6 Ghz:
+	- It is used in 802.11 ax,be
+	- Faster data rate
+	- Very low interference
+	- Channel widths are 20/40/80/160/320 and we can have around 59
+channels
+	- It is accessible only by Wi-Fi 6E/7
