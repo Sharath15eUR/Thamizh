@@ -1,0 +1,6 @@
+802.1X significantly boosts security in wireless networks by ensuring that only authorized devices can connect and use the network. It provides a more secure way of authenticating users and controlling access to the network, preventing unauthorized devices from gaining access.
+802.1X requires that devices authenticate before they can even join the network. This helps ensure that only legitimate users or devices can access the network.
+802.1X uses protocols like EAP (Extensible Authentication Protocol) to securely exchange authentication information, which prevents eavesdropping or man-in-the-middle attacks.
+802.1X uses a RADIUS server to centrally manage and verify credentials. This adds an extra layer of security because the server can enforce policies, track who’s connected, and revoke access if necessary
+
+

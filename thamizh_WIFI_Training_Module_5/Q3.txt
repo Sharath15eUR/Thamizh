@@ -1,0 +1,11 @@
+TWT:
+ Target wake time is a power saving mode feature introduced in wifi 6, which
+allows most the device to sleep most of the time, so that the battery can be
+saved especially for the IoT devices.
+
+	In TWT, both the AP and the client agrees to a specific schedule,
+on which the client will wake up and transmit the data and it will be in sleep
+mode for the rest of the time. So huge battery savings and improved QoS
+in IoT services
+
+

@@ -1,0 +1,11 @@
+Authentication:
+	it is the process of verifying the identity of a user before allowing
+access to the wifi network
+	It ensures that only trusted devices can connect to a n/w
+	It prevents unauthorized access to the n/w
+
+Encryption:
+	It make sures the transmitted data is safe
+	It prevents hacker from accessing the data
+	Even if they get the data, they need the decryption key to do it
+	

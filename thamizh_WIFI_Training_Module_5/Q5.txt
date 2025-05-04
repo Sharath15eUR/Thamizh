@@ -1,0 +1,7 @@
+Terms			Wifi 6			Wifi 6E
+Freq. bands		2.4,5Ghz		2.4,5,6Ghz
+Range			Longer range		Shorter range
+Channel width		160Mhz,congestion	160Mhz,easily available
+Interference		Medium			Very low
+LAtency			low			ultra-low
+Speed 			High			very high

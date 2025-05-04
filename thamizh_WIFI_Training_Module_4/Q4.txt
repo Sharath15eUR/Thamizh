@@ -1,0 +1,18 @@
+Scanning is the process in which a wireless device searches for the available
+WiFi networks. There are two types of scanning
+1. active scanning 
+2. passive scanning
+
+Active scanning:
+	The client sends probe req. on channels and the APs nearby respond to
+the probe req. The steps include,
+	Client tune to a specific channel
+	sends a probe req
+	AP respond and make connection
+	; active scanning can also find hidden APs and more power consuming
+	Faster discovery
+
+Passive scanning:
+	client device do not send any frames ; it simply listens for beacon
+frames . Beacon frames are broadcasted by the AP every 100ms; slower as it 
+has to wait for beacon requests and it is more safer than active scanning

@@ -1,0 +1,21 @@
+The MAC layer has three planes,
+	1. Management plane
+	2. Control Plane
+	3. Data plane
+
+Management plane:
+	It deals with network organization, connection setup and maintenance
+	Some of the functions are, 
+		scanning, client association, security management, QoS 
+management, load balancing, power management, wlan romaing
+
+Control plane:
+	It mainly focusses on coordination and manage access to the medium
+Some of the functions are,
+		Request to send, clear to send, acknowledgement, Point 
+co-ordination function, and EDCA and also supports block acknowledgement
+
+Data plane:
+	It is responsible for transmitting the data between devices
+	It supports QoS frame to support priority of data, encrypted data,
+null data frame to indicate client sleeping mode

@@ -1,0 +1,24 @@
+EAPOL 4 way handshake - Extensible Authentication Protocol Over LAN
+
+This authentication protocol is used to agree on the encryption after association
+by both the client and the AP.
+
+The steps are :
+	1. The AP will generate a random number called ANonce and sends it to
+client.
+	2. The client will generate its own random number called Snonce
+(supplicant) and derives PTK (Pairwise transient key) by using the formula,
+	PTK = PRF(PMK+Anonce+Snonce+mac addresses), where PMK is already known
+to both supplicant and AP during association and PRF is a pseduo random fn. 
+The client sends the Snonce along with MIC to the AP.
+	The AP can again check the MIC by generating the PTK using snonce
+and Anonce.
+	
+	3. The AP will send GTK(Group transient key) encrypted with PTK
+to the client and ask it to use GTK for broadcast and PTK for unicast and ask
+the client to install it.
+
+	4. Client sends an EAPOL key frame acknowledging that it has installed
+the PTK and GTK. Once the acknowledgement is received, the real data flow
+can happen
+

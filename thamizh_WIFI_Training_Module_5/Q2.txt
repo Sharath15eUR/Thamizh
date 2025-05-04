@@ -1,0 +1,10 @@
+OFDMA:
+	Orthogonal Frequency Division Multiple Access. It divides the
+entire bandwidth into smaller narrow channels so that multiple devices
+can transmit data simultaneously. 
+	before OFDMA , only one user can send data occupying the entire 
+bandwidth, so entire bandwidth cannot be used efficiently.
+	
+	OFDMA can be useful in crowded places and when we need to small
+packets of data. Reduces latency and it divides the bandwidth into
+small pieces called resource units and each device can get its own RU

@@ -1,0 +1,20 @@
+802.11k - Radio resource management
+	It helps the device to find the best available AP quickly.
+	Once it is connected to a AP, it requests a neighbour port, 
+	The AP will give a list og neighbour APs, so the device no need
+to scan now, it already has the list of neighbour APs so that it can connect
+to the nearby one as during roaming.
+	Less packet loss and huge battery saving
+
+802.11v: wireless network management
+	Gives the network ability to suggest a client device to move
+to a better AP
+	The AP monitors the device health and load
+	It sends a BSS transition management request to the client, suggesting
+it to move a better AP
+	the client device roam based on that 
+	Better load balancing
+
+So the 802.11k gives a list of nearby APs to roam and 802.11v suggests to
+which AP the device can roam to
+

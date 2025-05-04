@@ -1,0 +1,6 @@
+WPA2 was introduced to improve Wi-Fi security because the older standards like WEP and WPA had weaknesses that hackers could break easily.
+
+WEP (Wired Equivalent Privacy) was the first Wi-Fi security method, but it had many flaws. Hackers could crack WEP keys in just a few minutes. 
+Then came WPA (Wi-Fi Protected Access) as a quick fix, but it was still based on some of WEP's parts, so it wasn’t strong enough for the long term.
+
+So, WPA2 was introduced in 2004 by the Wi-Fi Alliance to give stronger and more reliable protection. It uses something called AES (Advanced Encryption Standard),which is a powerful encryption method that’s harder to break.

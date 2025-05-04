@@ -1,0 +1,14 @@
+MAC layer:
+	Media access control layer is present inside the data link layer in the
+OSI model. It belongs to the level 2; The data link layer is divided into
+
+MAC sublayer
+LLC sublayer
+
+Significance:
+	MAC layer decides when and how a device can send data without collision
+	Mac layer adds the source and dest. MAC addresses for communication
+	MAC layer handles the error detection and it also responsible 
+	  for retransmission of frames
+	It formats data into frames by adding headers, and other details
+	It controls how device access the physical medium

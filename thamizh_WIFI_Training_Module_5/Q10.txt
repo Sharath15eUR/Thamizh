@@ -1,0 +1,14 @@
+802.11k - radio resource management
+	It gives the list of available neighbour APs to which the device
+can get connected to during roaming once the devices request a 
+neighbour port
+
+802.11v: 
+	It gives suggestion to the device to which AP it can roam to so that
+it will get better signal and quality coverage
+
+802.11r:
+	it enables the fast handover during romaing, by enabling the device
+to stay connected while genreating the key for the new AP, and once it
+transfers the connection it can again re-verify the new key. SO a lot
+of time is saved by using this

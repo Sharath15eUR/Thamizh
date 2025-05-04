@@ -1,0 +1,20 @@
+MAC methodologies:
+	
+Distributed Coordination fn,
+	It is a decentralized method based on "listen before talk",
+and it is based on CSMA/CA
+	1. device listens the medium for idle time and if the medium is
+idle for a specific period of time (DIFS), then it will start a backoff timer 
+and once the timer reaches 0, it will transmit the frame and if collision
+occurs it will again wait for exponential backoff time
+
+Point Coordination fn,
+	Centralized method and AP controls the medium access.
+	AP becomes the central coordinator and it will poll each STA
+during the CFP(contention free period time) and only the polled STA can
+transmit and once the CFP ends the DCF continues again
+
+EDCA:
+	Each packet is given a priority, and so different packets have
+different back off timer. The packet with high priority will have least
+back off timer, so they ger frequent access to the collision medium.

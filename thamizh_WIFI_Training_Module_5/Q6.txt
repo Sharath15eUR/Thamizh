@@ -1,0 +1,8 @@
+Major innovations:
+	It is also called as Extremely high throughput
+	Supports 320MHz channel
+	4096-QAM so higher data rate
+	Multi link opeartion - devices can use multiple bands at the same time
+	reduced latency
+	Enhanced security and OFDMA features
+	

@@ -1,0 +1,17 @@
+802.11r enables fast roaming between APs. The fast BSS transition allows
+faster and secure transfer in the connection.
+
+Usually the devices, when try to roam to a new AP they should verify their
+key so it takes a long time.
+
+The 802.11r enables the device to negotiate the security keys to the
+new AP without being disconnected to the old AP.
+So once they shift to new AP they can easily re-verify the key instead of
+generating a new one. So the data loss is reduced to a larger extent.
+And also the handover is almost fast,secure and invisible.
+
+In mobile:
+	Seamless roaming
+	almost invisible handoffs
+	Energy saving
+	Very low latency switching

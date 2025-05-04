@@ -1,0 +1,19 @@
+The pillairs of wifi security are,
+
+	1. Authentication:
+		It verifies who is allowed to connect to the network.
+		Prevents unauthorized access to the network
+	
+	2. Encryption:(Confidentiality)
+		The transmitted data is kept private so that it is not accessible 
+to the outsiders. 
+		It prevents eavesdroping and other hacking methods
+
+	3. Integrtiy:
+		Ensures that the transmitted data is not tampered during
+transmission.
+		It is done by using message integrity check
+	
+	4. Availablity:
+		Ensures the network is available to the legitimate users.
+		it should overcome DDOS attacks

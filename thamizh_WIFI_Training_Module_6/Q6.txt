@@ -1,0 +1,12 @@
+The Pairwise Master Key (PMK) is like a secret main key that helps protect the Wi-Fi connection.
+Before the 4-way handshake starts, both the device and the Wi-Fi access point already have the same PMK.
+
+This PMK is created either from the Wi-Fi password (in home networks) or given securely by an authentication server (in enterprise networks using 802.1X).
+
+The 4-way handshake uses the PMK to create another key called the PTK (Pairwise Transient Key).
+
+The PTK is a unique key used to encrypt and protect the actual Wi-Fi data.
+
+During the handshake, they exchange some values (called nonces and MAC addresses) and use those with the PMK to generate matching PTKs on both sides — but without ever sending the PMK directly.
+
+

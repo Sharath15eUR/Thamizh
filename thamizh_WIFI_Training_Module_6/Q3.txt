@@ -1,0 +1,23 @@
+Wired Equivalnet privacy (WEP):
+	Uses RC4 stream cipher for encryption
+	short keys and so very weak
+	no proper key management
+	easily vulnerable to attacks
+
+WPA (Wifi protected access)
+	Introduced TKIP
+	Backward compatible with WEP
+	stronger than wep but still hackable
+	
+
+WPA2 (Wifi protected access 2)
+	Uses AES
+	it has two modes - WPA2-Personal and (uses PSK authentication)
+			- WPA2-Enterprise (uses EAP authentication)
+	Very strong
+
+WPA3 (Wifi protected access 3)
+	Stronger encryption with AES
+	replaced PSK with SAE
+	it offers 192-bit encryption
+	Also IoT devices can easily connect to it

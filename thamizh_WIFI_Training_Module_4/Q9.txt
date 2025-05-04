@@ -1,0 +1,18 @@
+Blok ack:
+	In wifi, usually ack is sent after each frame which casued overheads
+in processing . So in 802.11e block acknowledgement was introduced in which
+after sending a number of frames a single block ack is sent to acknowledge
+all the so far sent frames.
+	1. sender transmit a series of frames (called aggregate)along with
+burst and instead of waiting for each ack it will send all the frames
+	2. Once the receiver received the burst , it will send a block ACK
+	3. The sender checks the block ACK and retransmit only the missed
+frames.
+	4. The block ACK contains a bitmap which shows which frames are
+received successfully and which are missed.
+
+Adv:
+	1. has high throughput and efficiency
+	2. Lower latency
+	3. selective retransmission
+	4. need for aggregation

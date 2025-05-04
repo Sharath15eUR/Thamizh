@@ -1,0 +1,21 @@
+The MAC frame format is 
+	MAC header | Frame Body | FCS
+
+The MAC header of 802.11 is,
+
+Frame Control | Duration/ID | Address fields(1,2,3) | Sequence control | 
+
+Address 4 | QoS control | HT Control |
+
+Main fields of 802.11 MAC header:
+	1. Frame control - contains key information about the type and behaviour of frame
+	2. Duration / ID - Tells how long the medium will be reserved for frame's transmission
+	3. Addr 1 - Source mac address
+	4. addr 2 - dest. mac address
+	5. addr 3 - BSSID of AP
+	6. seq control -  contains seq. number and fragment number
+	7. Addr 4 - used in mesh network of wireless distribution
+	8. QoS control - Indicates priority of frames
+	9. HT control - used in 802.11n for MIMO feedback
+	10. Frame body - Actual data payload
+	11. FCS -  used for error detection

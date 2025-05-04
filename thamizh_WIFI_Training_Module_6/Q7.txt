@@ -1,0 +1,11 @@
+The 4-way handshake ensures mutual authentication between the client  and the access point (AP) by using a series of steps that verify both the identity of the client and the AP.
+
+
+
+Step 1: The AP sends a message to the client with a nonce (a random number), which is used to create unique encryption keys for the session.
+
+Step 2: The client responds with its own nonce (another random number), along with proof that it knows the shared secret (like the PMK). This proves to the AP that the client has the correct key.
+
+Step 3: The AP then sends a message back to the client, confirming the encryption keys are set up correctly. At this point, both the client and the AP have generated the same keys from the PMK and nonces, confirming that they are both authentic.
+
+Step 4: The client acknowledges the AP’s message, and now both sides are ready to securely communicate.

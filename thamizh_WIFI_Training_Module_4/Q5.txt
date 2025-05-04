@@ -1,0 +1,21 @@
+The client association process happens in 3 process,
+1. Authentication
+2. Association
+3. WPA/WPA2 authentication
+
+1. Authentication:
+	Two types,
+		Open - most modern networks are based on this , they just allow
+the client to join the AP and authentication is handled after by WPA
+		Shared - the client holds a WEP key which is not secure and
+it belongs to old legacy method
+
+2. Association:
+	The association is the process where the client gets registered with
+the AP. It shares it data rate and also the AP assign the client a Association
+ID (AID)
+
+3. WPA/WPA2 authentication:
+	once it is registered , a 4 way handshake mechanism will happen
+where encryption of keys occurs and only after this real time data will flow
+between the client and the AP

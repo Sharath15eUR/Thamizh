@@ -1,0 +1,25 @@
+Power saving mode:
+	As the wireless devices rely on the battery, the Wi-Fi radio cannot
+be always active, so we need to save the battery but without losing connection
+to AP, so a power saver mode was introduced where the device can sleep
+without losing the connection to AP.
+
+STA(device) sets the power management bit in the frame control and inform the
+AP that it is entering a power saving mode. When sleeping STA turns off its
+wifi radio and all the incoming data to the STA will be buffered by the AP.
+Station wakes periodically and checks the AP buffer using PS Poll frames
+
+Types:
+  1. Power saving mode:
+	STA sleeps most of the time and checks for TIM bit, if it set to 1
+it will send PS Poll to AP to get the frames.
+ 2. U-APSD :
+	client does not need to wait for beacon, after client sends the
+QoS null frame (trigger) The AP sends all the buffered packets.
+
+3. WNM PSM:
+	Client can negotiate power saving schedules with AP , like it can
+sleep during non-busy hours.
+
+4. TWT :
+	STA and AP agree on speific time schedule for STA to wake up.

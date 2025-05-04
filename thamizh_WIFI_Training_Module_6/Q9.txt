@@ -1,0 +1,5 @@
+802.1X is a standard used to provide authentication and access control to devices trying to connect to a network,
+The main problem it solves is ensuring that only authorized devices are allowed to connect to the network, keeping unauthorized users out.
+802.1X requires authentication before a device can join the network. It checks if the device is allowed to access the network by validating the user's credentials
+802.1X uses a RADIUS server to manage access control. The RADIUS server checks if the client is allowed to connect and what level of access they should have.
+

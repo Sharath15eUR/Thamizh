@@ -1,0 +1,26 @@
+Wifi 6 (802.11ax):
+	Suports OFDMA so the channel is divided into multiple narrow bands
+and data can be sent parallely.
+	Supports MU-MIMO (both uplink and downlink)
+	Supports TWT(target wake time)power saving mode
+	1024 QAM and so higher data rates
+	Improved efficiency
+	Supports better security with WPA3
+	Works in 2.4Ghz and 5Ghz
+
+Wifi 6E(802.11ax extension):
+	Same as wifi 6 and also it supports 6Ghz band
+	Wider channels as it allows 160 MHz channels
+	Less interference
+	Lower latency and high reliability
+	
+Wifi 7(802.11be):
+	Exteremly high efficiency
+	320Hz wide channels and so more bandwidth
+	4096 QAM
+	Multi link operation - a device can simultaneously use multiple bands
+	Very low latency
+	Supports 2.4,5,6 GHz
+
+Where as Wifi 5 supported only 5Ghz and 80MHz channels and supports MU-MIMO
+in only downlink

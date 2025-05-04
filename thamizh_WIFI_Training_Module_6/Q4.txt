@@ -1,0 +1,7 @@
+The reason for WEP being very insecure when compared to WPA2 and WPA3,
+are
+	WEP uses RC4 encryption algorithm
+	It reuses the key
+	Less number of combinations
+	Vulnerable to simple attacks
+	Very weak mechanism to check if a message is tampered with

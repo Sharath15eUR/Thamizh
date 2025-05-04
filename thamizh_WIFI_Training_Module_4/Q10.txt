@@ -1,0 +1,17 @@
+Aggregation technique was introduced mainly to overcome overhead in handling
+each frame and combining multiple frames to result in fewer transmissions.
+
+A-MSDU : Aggregated MAC Service data unit
+	it combines multiple MSDUs so that a single MAC header can be used for
+them and so it is efficient. But if one MSDU is corrupted then we need to
+send the entire aggregated frame again as all of them was under a single 
+MAC header.
+
+A-MPDU: Aggregated MAC Protocol data unit
+	it combines multiple PDUs,but each sub-frame has its own MAC header,
+so if one msdu is corrupted then that MSDU alone can be retransmitted.
+
+
+A-MSDU inside A-MPDU:
+	We can aggregate multiple MSDUs into A-MSDU
+	and then we can aggregate multiple A-MSDU into A-MPDU

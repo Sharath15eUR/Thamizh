@@ -1,0 +1,15 @@
+MLO - 
+	Multi link operation is introduced in WiFi 7 and because of this,
+it allows the device to use multiple bands at the same time.
+
+	Earlier , devices can use only one band at the time, either 2.4,5
+or 6 Ghz.
+	So MLO increases the throughput by enabling transmission across
+multiple bands
+	better utilization of the available bands,
+	Reduced latency and supports load balancing
+	Its types are,
+		Link aggregation
+		Link redundancy
+		Link load balancing
+		link steering
