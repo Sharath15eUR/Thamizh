@@ -33,8 +33,9 @@ void addTasks(struct Day week[])
             int rem_tasks=MAX_TASKS-week[i].taskCount;
             printf("You can add %d tasks\n",rem_tasks);
 
-            printf("Enter the task %d for %s",week[i].taskCount+1,week[i].dayName);
+            printf("Enter the task %d for %s ",week[i].taskCount+1,week[i].dayName);
             scanf(" %[^\n]",week[i].tasks[week[i].taskCount]);
+            week[i].taskCount++;    
             return;
         }
         
@@ -42,11 +43,11 @@ void addTasks(struct Day week[])
     printf("invalid day name");
 }
 
-void displayTasks(struct Day week[])
+void displayTasks(const struct Day week[])
 {
     for (int i = 0; i < TOT_DAYS;  i++)
     {
-        printf("Day: %s",week[i].dayName);
+        printf("Day: %s ",week[i].dayName);
         if (week[i].taskCount>0)
         {
             for (int j = 0; j < week[i].taskCount; j++)
@@ -56,7 +57,7 @@ void displayTasks(struct Day week[])
             
         }
         else    
-            printf("No tasks found");
+            printf("No tasks found\n");
         
         
     }
