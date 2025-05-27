@@ -1,0 +1,37 @@
+fork()
+	It is used to create a new process and it is called as child process.
+It is an exact copy of the parent process.Once copied both the process can
+work independently with different PIDs. It returns a PID of 0 on a successful
+creation of child process. Mainly used in paralled processing
+
+Common signals:
+	Signals are a way used by OS or user to notify a process that
+something has happened. Some of them are
+	SIGINT - interrupt
+	SIGTERM - termination req.
+	SIGKILL - forceful termination
+	SIGSEGV - segmentation fault
+
+Kernel crashes:
+	When the OS kernel crashes, the system restarts or freezes. This 
+happens because of
+	Null pointer dereference
+	Buffer overlfow
+	Driver errors
+	Deadlock
+
+Time complexity:
+	It describes the execution time of an algorithm with respect to its
+input size(n). Some of them are O(n),O(n^2),
+
+Locking mechanism:
+	In multithreaded environment, locking mechanism is used to prevent
+racing condition(where two threads try to access & modify the same data).
+Mutex:
+	It blocks the other threads(sleep condition) until the resource is available; it is
+used when safety and resource sharing is important;
+
+Spinlock:
+	A thread waits in a spinloop (it continuously checks the availability
+of lock). It wastes CPU cycles but can be efficient when the wait duration is
+shorter.
